@@ -228,7 +228,7 @@
     flex-basis: 70%;
     min-width: 1120px;
 }
-#body-box{
+.list{
     margin-top: 2%;
     margin-bottom: 2%;
     display: flex;
@@ -238,7 +238,7 @@
 #body-title h1{
     text-align: center;
 }
-.body-box-item
+.item
 {
     margin-top: 2%;
     width: 240px;
@@ -249,26 +249,43 @@
     display: flex;
     flex-direction: column;
 }   
-.body-box-item:hover
+.item:hover
 {
     box-shadow: 0px 7px 29px 0px rgba(72, 72, 72, 0.2);
 }
-.body-box-item img
+.item img
 {
     width: 100%;
     height: 200px;
     margin-bottom: 1%;
 }
-.body-box-item p
+.item p
 {
     text-align: center;
     font-size: 20px;
     margin-bottom: 1%;
 }
-.body-box-item div
+.item div
 {
     display: flex;
     justify-content: center;
+}
+.listPage{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+}
+.listPage li{
+    background-color: grey;
+    padding: 15px;
+    display: inline-block;
+    margin:0 10px ;
+    cursor: pointer;
+}
+.listPage .active{
+    background-color: #f2f2f2;
+    color: black;
 }
 /*design footer of shop*/
 #footer

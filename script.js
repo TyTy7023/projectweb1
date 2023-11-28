@@ -1,4 +1,4 @@
-let listProducts = [
+/*let listProducts = [
     {
         id: 1,
         name: 'Skin 1004 Hyalu- Cica Toner1',
@@ -99,7 +99,7 @@ function showProduct(productFilter) {
 // filter.addEventListener('sumit', function (event) {
 //     alert('1111');
 // })
-
+*/
 
 let thisPage = 1;
 let limit = 3;
