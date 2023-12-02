@@ -271,6 +271,20 @@
     display: flex;
     justify-content: center;
 }
+.item  button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 0 12px;
+    cursor: pointer;
+    border: none;
+    margin-left: 25%;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.item button:hover{
+    background-color: #888787;
+}
 .listPage{
     margin-top: 10px;
     padding: 10px;
@@ -513,6 +527,34 @@
     margin-top: 5%;
     font-size: 20px;
 }
+.cart{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.cart h2{
+    margin-bottom: 20px;
+}
+.cart table{
+    width: 100%;
 
-
-   
+}
+.cart img{
+    
+    height: 130px;
+    margin-bottom: 1%;
+}
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+.cart table tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+.cart table thead tr th:last-child{
+    text-align: right;
+}
+.cart table tbody tr td:last-child {
+text-align: right;
+}
