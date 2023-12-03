@@ -172,7 +172,15 @@ btn.forEach(function(button,INDEX){
 
 function addcart(productPrice,productImg,productName){
     var addtr= document.createElement("tr")
-    var trcontent= '<tr>  <td style="display: flex;align-items: center;"> <img style=" width: 150px;" src="'+productImg+'"> '+productName+' </td> <td><p style="font-size: 15px;"><span>'+productPrice+'</span></p></td><td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td><td style="cursor: pointer;">Xóa </td></tr>'
+    var cartItem = document.querySelectorAll("tbody tr")
+    for(var i = 0 ; i < cartItem.length ; i++){
+        var productT = document.querySelectorAll(".title")
+        if(productT[i].innerHTML==productName){
+            alert("You have this product in cart")
+            return
+        }
+    }
+    var trcontent= '<tr>  <td style="display: flex;align-items: center;"> <img style=" width: 150px;" src="'+productImg+'"> <span class="title">'+productName+'</span> </td> <td><p style="font-size: 15px;"><span class="price">'+productPrice+'</span></p></td><td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td><td style="cursor: pointer;"><span class="delete">Xóa</span> </td></tr>'
     addtr.innerHTML= trcontent
     var cartTable=document.querySelector("tbody")
     //console.log(cartTable)
@@ -181,8 +189,9 @@ function addcart(productPrice,productImg,productName){
 
 
     cartTotal()
+    deleteCart()
 }
-//---------------------total----------------------//
+//---------------------total price----------------------//
 function cartTotal(){
     var cartItem = document.querySelectorAll("tbody tr")
     var totalC = 0
@@ -191,18 +200,60 @@ function cartTotal(){
         //console.log(i)
         var inputValue = cartItem[i].querySelector("input ").value
         //console.log(inputValue)
-        var productPrice = cartItem[i].querySelector("span").innerHTML
+        var productPrice = cartItem[i].querySelector(".price").innerHTML
        // console.log(productPrice)
-        totalA= inputValue*productPrice*10000
+        totalA= inputValue*productPrice*1
        // totalB= totalA.toLocaleString('de-DE')
       //  console.log(totalB)
-        totalC= totalC + totalA 
-       totalD =totalC.toLocaleString('de-DE')
+        totalC= totalC + totalA
+       //totalD =totalC.toLocaleString('de-DE')
        // console.log(totalC)
 
 
     }
             var cartTotalA =document.querySelector(".price-total span")
-            cartTotalA.innerHTML = totalC
+            var cartPrice =document.querySelector(".item-box span")
+            cartTotalA.innerHTML = totalC.toLocaleString('de-DE')
+            cartPrice.innerHTML = totalC.toLocaleString('de-DE')
+            inputchange()
             console.log(cartTotalA)
 }
+//---------------------Delete cart----------------------//
+function deleteCart(){
+    var cartItem = document.querySelectorAll("tbody tr")
+    for(var i = 0 ; i < cartItem.length ; i++){
+        var productT = document.querySelectorAll(".delete")
+        productT[i].addEventListener("click",function(event){
+            var cartDelete = event.target
+            var cartItemR = cartDelete.parentElement.parentElement
+            cartItemR.remove()
+            cartTotal()
+            //console.log(cartItemR)
+        })
+
+        //console.log(cartItemR)
+        }
+    }
+
+function inputchange(){
+    var cartItem = document.querySelectorAll("tbody tr")
+    for(var i = 0 ; i < cartItem.length ; i++){
+        var inputValue = cartItem[i].querySelector("input")
+        inputValue.addEventListener("change",function(){
+            cartTotal()
+        })
+
+        //console.log(cartItemR)
+        }
+}
+
+const cartbtn = document.querySelector(".bx-x")
+const cartshow = document.querySelector(".bxs-shopping-bags")
+cartshow.addEventListener("click",function(){
+    console.log(cartshow)
+   document.querySelector(".cart").style.right = "0"
+})
+cartbtn.addEventListener("click",function(){
+    console.log(cartshow)
+   document.querySelector(".cart").style.right = "-100%"
+})
