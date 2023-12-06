@@ -9,6 +9,17 @@
         <title>BRANDS</title>
     </head>
     <body>
+        <script>
+            // JavaScript code to display a message if loginSuccess parameter is present
+            document.addEventListener('DOMContentLoaded', function () {
+                const urlParams = new URLSearchParams(window.location.search);
+                const loginSuccess = urlParams.get('loginSuccess');
+    
+                if (loginSuccess === 'true') {
+                    alert('You have successfully logged in and can now make purchases!');
+                }
+            });
+        </script>
         <div style="position: fixed; z-index: 10; width: 100%; ">
     <!--heading of index-->
             <div id="heading">
@@ -43,7 +54,7 @@
                 <div class="item-box" align="center">
                     <a href="../ITEMS/signup.html">
                         <i class='bx bxs-user-circle'></i>
-                        <p style="font-size: small;">sign up</p>
+                        <p style="font-size: small;">log out</p>
                         <!-- Menu structure -->
                         <div class="menu">
                             <ul>
@@ -365,7 +376,7 @@
             <section class="cart">
                 <i class='bx bx-x'></i>
                 <h2>Cart</h2>
-                <form action="">
+                <form id="checkoutForm" onsubmit="handleBuy(event)" action="">
                     <table>
                         <thead>
                             <tr>
@@ -408,6 +419,16 @@
                     <button>Buy</button>
 
                 </form>
+                <script>
+                    function handleBuy(event) {
+                        event.preventDefault(); // Prevents the form from submitting normally
+            
+                        // Perform any additional logic here (e.g., send data to the server)
+            
+                        // Show a success message
+                        alert('Purchase successful! Thank you for shopping with us.');
+                    }
+                </script>
             </section>
         </div>
         <div id="footer">

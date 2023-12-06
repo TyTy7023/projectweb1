@@ -19,7 +19,8 @@
 
 }
 .heading-box-R
-{
+{   
+    position: relative;
     width: 25%;
     display: block;
     margin-left: 10%;
@@ -87,7 +88,7 @@
     text-decoration: none;
     color: black;
     cursor: pointer;
-    display: flex; /* Added to enable flex layout */
+     /* Added to enable flex layout */
     align-items: center; /* Center content vertically */
 }
 
