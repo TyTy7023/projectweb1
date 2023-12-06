@@ -102,7 +102,7 @@ function showProduct(productFilter) {
 */
 
 let thisPage = 1;
-let limit = 3;
+let limit = 2;
 let list = document.querySelectorAll('.list .item');
 
 function loadItem() {

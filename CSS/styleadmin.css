@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#heading
+{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+}
+/*heading*/
+.heading-box-L
+{
+    width: 35%;
+    display: block;
+
+}
+.heading-box-R
+{
+    width: 25%;
+    display: block;
+    margin-left: 10%;
+
+}
+.heading-box-C
+{
+    width: 40%;
+    display: block;
+}
+/*item of heading*/
+#item
+{
+    align-items: center;
+    font-size: 30px;
+    display: flex;
+}
+#item .item-box
+{
+    width: 30%;
+    font-size: 120%;
+    display: block;
+    margin-top: 3%
+}
+#item .item-box a
+{
+    text-decoration: none;
+    color: black;
+    cursor: pointer; /*Converts pointer to hand*/
+}
+#item .item-box a:hover
+{
+    opacity: 0.5;/*make transparent*/
+}
+/*item to top of page*/
+#item-home
+{
+    opacity: 0.7;/*make transparent*/
+    position: fixed;/*fixed the icon*/
+    bottom: 0;
+    z-index: 6;/*stack of images*/    
+}
+#item-home:hover
+{
+    opacity: 1;
+}
+/*design menu*/
+#main-menu 
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #f1f1f1;
+    z-index: 5;
+}
+#main-menu li
+{
+    width: 25%;
+    position: relative; /*Select the parent elements position*/
+    list-style: none;
+}
+#main-menu li a
+{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 17px;
+}
+#main-menu li a:hover /*change text color when you point*/
+{
+    color: rgb(225, 96, 21);
+}
+
+
+#body{
+    width: 100%;
+    height: 700px;
+    padding-top: 120px;
+}
+#body .menu-admin{
+    width: 30%;
+    background-color: #BDDCB3;
+    display: flex;
+}
+#body .welcome-admin{
+    height: 50px;
+    width: 100%;
+}
+#footer
+{
+    width: 100%;
+    height: max-content;
+    background-color:#BDDCB3 ;
+    display: flex;
+    color:#807979
+}
+.footer-box
+{
+    width: 20%;
+    margin: 1%;
+    display: block;
+}
+#footer ul.information 
+{
+    margin-left: 20%;
+}
+#footer ul.information li
+{
+    margin-left: -20px;
+}
+.info-contact
+{
+    display: flex;
+    font-size: 40px;
+    margin: 8px;
+}
+.info-contact p
+{
+    margin-top: 13px;
+    font-size: medium;
+}
+
+
+   
