@@ -102,7 +102,7 @@ function showProduct(productFilter) {
 */
 
 let thisPage = 1;
-let limit = 3;
+let limit = 6;
 let list = document.querySelectorAll('.list .item');
 
 function loadItem() {
@@ -257,3 +257,74 @@ cartbtn.addEventListener("click",function(){
     console.log(cartshow)
    document.querySelector(".cart").style.right = "-100%"
 })
+
+const products = [
+    { name: 'Unove Deep damage Repair shampoo', category: 'shampoo', price: 10.99 },
+    { name: 'Unove silk oil essence', category: 'essence', price: 10.99 },
+    // Thêm sản phẩm khác nếu cần
+  ];
+
+  const resultsPerPage = 2; // Số sản phẩm hiển thị trên mỗi trang
+  let currentPage = 1;
+function searchProducts(){
+    // Lấy giá trị từ các trường tìm kiếm
+    const productName = document.getElementById('productName').value.toLowerCase();
+    const category = document.getElementById('category').value.toLowerCase();
+    const minPrice = parseFloat(document.getElementById('minPrice').value) || 0;
+    const maxPrice = parseFloat(document.getElementById('maxPrice').value) || Infinity;
+
+    // Lọc danh sách sản phẩm theo các tiêu chí tìm kiếm
+    const filteredProducts = products.filter(product => {
+      const nameMatch = product.name.toLowerCase().includes(productName);
+      const categoryMatch = category === '' || product.category === category;
+      const priceMatch = product.price >= minPrice && product.price <= maxPrice;
+
+      return nameMatch && categoryMatch && priceMatch;
+    });
+
+    // Hiển thị kết quả
+    displayResults(filteredProducts);
+}
+function displayResults(results) {
+    const resultsContainer = document.getElementById('results');
+    const paginationContainer = document.getElementById('pagination');
+
+    // Tính toán các giá trị phân trang
+    const startIndex = (currentPage - 1) * resultsPerPage;
+    const endIndex = startIndex + resultsPerPage;
+    const paginatedResults = results.slice(startIndex, endIndex);
+
+    // Hiển thị kết quả
+    resultsContainer.innerHTML = '';
+    paginatedResults.forEach(product => {
+      const productElement = document.createElement('div');
+      productElement.className = 'item';
+      productElement.innerHTML = `
+        <a href="#" style="text-decoration: none; color: black;">
+          <img src="IMAGES/${product.category}.jpg" alt="${product.name}">
+          <div class="heart"></div>
+          <p style="margin-top: 10px;">${product.name}</p>
+          <p style="font-size: 15px;"><del>22.00 $</del></p>
+          <p><span>${product.price.toFixed(2)} </span>$</p>
+          <div>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <p style="font-size: medium; color: darkgray;">(469)</p>
+          </div>
+        </a><button>Add to cart</button>
+      `;
+      resultsContainer.appendChild(productElement);
+    });
+
+    // Hiển thị phân trang
+    const totalPages = Math.ceil(results.length / resultsPerPage);
+    paginationContainer.innerHTML = `Trang ${currentPage} / ${totalPages}`;
+
+    // Tùy chọn: Thêm các điều khiển phân trang (nút Next, Prev)
+  }
+
+  // Tìm kiếm ban đầu khi trang được tải
+  searchProducts();

@@ -68,26 +68,65 @@
     font-size: 30px;
     display: flex;
 }
-#item .item-box
-{
+#item .item-box {
     width: 30%;
     font-size: 120%;
     display: block;
-    margin-top: 3%
+    margin-top: 3%;
+    position: relative;
+    
+    white-space: nowrap; 
+    text-overflow: ellipsis;
 }
-#item .item-box i{
+
+#item .item-box i {
     cursor: pointer;
 }
-#item .item-box a
-{
+
+#item .item-box a {
     text-decoration: none;
     color: black;
-    cursor: pointer; /*Converts pointer to hand*/
+    cursor: pointer;
+    display: flex; /* Added to enable flex layout */
+    align-items: center; /* Center content vertically */
 }
-#item .item-box a:hover
-{
-    opacity: 0.5;/*make transparent*/
+
+/* Styling for the menu */
+#item .item-box .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 150px; /* Set the width of the menu */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1;
 }
+
+#item .item-box:hover .menu {
+    display: flex; /* Display the menu using flex layout */
+    flex-direction: column; /* Arrange menu items vertically */
+}
+
+#item .item-box .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#item .item-box .menu li {
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+#item .item-box .menu li:hover {
+    background-color: #f0f0f0;
+}
+
 /*item to top of page*/
 #item-home
 {
@@ -109,15 +148,17 @@
     background-color: #f1f1f1;
     z-index: 5;
 }
+
 #main-menu li
-{
+{   text-align: center  ;
     width: 25%;
-    position: relative; /*Select the parent elements position*/
+    position:relative; /*Select the parent elements position*/
     list-style: none;
+    display: block;
 }
 #main-menu li a
 {
-    display: block;
+    
     text-align: center;
     text-decoration: none;
     color: black;
@@ -213,6 +254,43 @@
     border-radius: 20px;/*rounded imagine corners*/
     box-shadow: 10px #888787;
 }
+#wrapper
+{
+    max-width: 90%;
+    margin: 0px auto;
+    display: flex;
+    min-height: 500px;
+}
+/* design menu*/
+#sidebar{
+    flex-basis: 20%;
+    height: 20%;
+    text-align: center;
+}
+#sidebar li {
+    border-bottom: 2px solid black;
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+    list-style: none;
+}
+
+#sidebar  li a {
+    
+    text-decoration: none;
+    color:black;
+    padding: 7px 20px;
+    font-size: 20px;
+}
+#sidebar  li a h1{
+    text-decoration: none;
+    padding: 7px 20px;
+    
+}
+#sidebar  li  :hover{
+    color: rgb(225, 96, 21);
+}
+
 /*design buttons*/
 .buttons
 {
@@ -563,15 +641,16 @@
 text-align: right;
 }
 .cart{
-    margin-top: 10%;
+    margin-top: 8%;
     position: fixed;
-    height: 100vh;
+    height: 80vh;
     width: 400px;
     right: 0;
     top: 0;
-    background-color: #b58b8b;
+    background-color: #f1f1f1;
     padding: 12px 20px;
     overflow-y: scroll;
+    
     right: -100%;
     transition: all 0.3s ease;
 }
@@ -590,4 +669,18 @@ text-align: right;
     margin-bottom: 30px;
     font-size: 30px;
     text-align: left;
+}
+.address-section {
+    margin-top: 20px;
+}
+
+#address-select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#new-address {
+    width: 100%;
+    resize: none;
+    outline: none;
 }
