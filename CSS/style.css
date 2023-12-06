@@ -536,6 +536,7 @@
     margin: auto;
     text-align: center;
     padding-top: 30px;
+    z-index: 5;
 }
 .cart h2{
     margin-bottom: 20px;
