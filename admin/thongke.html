@@ -4,9 +4,20 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="CSS/styleadmin.css">
+        <link rel="stylesheet" href="../CSS/styleadmin.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>COCONUT-ADMIN</title>
+        <script>  
+            function sure(){  
+              var result = confirm("Bạn có chắc không?");  
+              if(result){
+                alert("Thay đổi thành công!")
+              }
+              else{
+                alert("Đã hủy bỏ thay đổi")
+              }
+            }
+          </script>
     </head>
     <body>
         <div style="position: fixed; z-index: 10; width: 100%; ">
@@ -14,58 +25,85 @@
             <div id="heading">
                 <!--insert logo-->
                 <div class="heading-box-L" align="center">
-                    <img src="IMAGES/logo.png" alt="COCONUT-cosmetics " width="60%">
+                    <img src="../IMAGES/logo.png" alt="COCONUT-cosmetics " width="60%">
                 </div>
                 <!--insert search box-->
                 <div class="heading-box-C">
+                    <h1>CHÀO MỪNG ĐẾN VỚI TRANG ADMIN</h1>
                 </div>
                 <!--insert item-->
                 <div class="heading-box-R" align="center" id="item">
-                    <div class="item-box" align="center">
-                    </div>
-                    <div class="item-box" align="center">
-                    </div>
+                    
                     <div class="item-box" align="center">
                         <a href="">
-                            <i style="margin-right: 10px;"class='bx bxs-user-circle' ></i>
-                            <p style="font-size: small; margin-right: 10px;"> Admin<p>
+                            <i class='bx bxs-user-circle'style="margin-right: 10px; font-size: 60px;" ></i>
+                            <p style="font-size: medium; margin-right: 10px;"> logout<p>
                         </a>
                     </div>
                 </div>
             </div>
-        <!--item to top of page-->
+        <!-- item to top of page
             <div >
-                <a href="INDEX.html " style="color: black;"id="item-home"> <!--link to top of index-->
+                <a href="INDEX.html " style="color: black;"id="item-home">
                     <img src="IMAGES/top.png" alt="top" width="100px" height="100px">
                 </a>
-            </div>
+            </div> -->
         <!--menu in index-->
             <ul id="main-menu">
-                <li><a href=""><h2>Quản Lý Sản Phẩm</h2></a></li>
+                <li style="background-color: rgb(227, 229, 230);"><a><h2 style="color: rgb(225, 96, 21);">Thống Kê</h2></a></li>
+                <li><a href="qlsp.html"><h2>Quản Lý Sản Phẩm</h2></a></li>
                 <li><a href=""><h2>Quản Lý Người Dùng</h2></a></li>
-                <li><a href=""><h2>Quản Lý Đơn Hàng</h2></a></li>
-                <li><a href=""><h2>Thống Kê</h2></a></li>
+                <li><a href=""><h2>Quản Lý Đơn Hàng</h2></a></li>  
             </ul>
         </div>
     <!-- design menu admin -->
     <div id="body">
-        <div class="menu-admin">
-            <div class="welcome-admin">
-                <a href="">
-                    <i style="margin-right: 10px;"class='bx bxs-user-circle' ></i>
-                    <p style="font-size: small; margin-right: 10px;"> Welcome Admin<p>
-                </a>
-            
+        <i class='bx bx-signal-5' style="font-size: 30px;"><b> TỔNG QUAN DOANH THU</b></i>
+        <div class="frame">
+            <div class="frame-box">
+                <h2>LƯỢT ĐẾN THĂM</h2>
+                <h1 style="color: rgb(244, 57, 57); font-size: 50px;">1.9M</h1>
+            </div>
+            <div class="frame-box">
+                <h2>LƯỢT THEO DÕI</h2>
+                <h1 style="color: rgb(244, 57, 57); font-size: 50px;">564.6K</h1>
+            </div>
+            <div class="frame-box">
+                <h2>TỔNG DOANH THU</h2>
+                <h1 style="color: rgb(244, 57, 57); font-size: 50px;">5M</h1>
             </div>
         </div>
-
+        <div>
+            <i class='bx bx-signal-5' style="font-size: 30px; margin-top: 1.5%;"><b>  DOANH THU SẢN PHẨM</b></i>
+        </div>
+        <select type="text"  class="findBox">
+            <option> tên thương hiệu...</option>
+            <option> DOVE </option>
+            <option> SKIN1004</option>
+            <option> THƯƠNG HIỆU 1</option>
+            <option> THƯƠNG HIỆU 3</option>
+        </select>
+        <label for="startDate">Ngày bắt đầu:</label>
+        <input type="date" id="startDate" >
+        <label for="endDate">Ngày kết thúc:</label>
+        <input type="date" id="endDate">
+        <button type="button" onclick="sure();">Thống kê</button>
+        </form>
+        <div class="chart">
+            <div class="chart-box">
+                <h1>BIỂU ĐỒ</h1>
+            </div>
+            <div class="chart-box1">
+                <h1>SỐ LIỆU</h1>
+            </div>
+        </div>
     </div>
         
         
     <!--design information of page-->
         <div id="footer">
             <div class="footer-box">
-                <img src="IMAGES/logo.png" alt="COCONUT-cosmetics " width="100%">
+                <img src="../IMAGES/logo.png" alt="COCONUT-cosmetics " width="100%">
             </div>
             <div class="footer-box" style="width: 51%;">
                 <h3 style="margin-left: 12.7%; margin-bottom: 5px;">COCONUT STORES</h3>

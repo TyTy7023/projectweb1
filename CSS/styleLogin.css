@@ -5,7 +5,6 @@
 #heading
 {
     width: 100%;
-    height: 70px;
     background-color: white;
     align-items: center;
     display: flex;
@@ -78,4 +77,60 @@
     display: block;
     justify-content: center;
     align-items: center;
+}
+
+#main-menu 
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: #f1f1f1;
+    z-index: 5;
+}
+
+#main-menu li
+{   text-align: center  ;
+    width: 25%;
+    position:relative; /*Select the parent elements position*/
+    list-style: none;
+    display: block;
+}
+#main-menu li a
+{
+    
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 7px 20px;
+    font-size: 20px;
+}
+#main-menu li a:hover /*change text color when you point*/
+{
+    color: rgb(225, 96, 21);
+}
+#main-menu li:hover ul.sub-menu /*to appears submenu*/
+{
+    display: block;
+}
+#main-menu ul.sub-menu /*align submenu*/
+{
+    width: 50% ;
+    left: 25%;
+    text-align: center;
+    position: absolute;/*Move the sub elements to the top left corner of the parent elements*/
+    padding: 5px;
+    background-color: #f1f1f1;
+    display: none; /*to hide submenu when you didn't point it*/
+    z-index: 5;
+}
+#main-menu ul.sub-menu li a/*design submenu*/
+{ 
+    width:370%;
+    font-size: 15px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(218, 212, 212);
+}
+#main-menu ul.sub-menu li a:hover /*change text color when you point*/
+{
+    background-color: rgb(204, 209, 166);
 }
