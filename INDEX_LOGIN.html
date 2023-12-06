@@ -18,13 +18,17 @@
                 </div>
                 <!--insert search box-->
                 <div class="heading-box-C">
-                    <form id="search-box"> 
+                    <form class="filter"> 
+                     
                         <input type="text" placeholder="  Search..." id="search-text"> 
+                     <div class="item submit">
                         <button type="submit" id="search-icon">
                             <i class='bx bx-search'></i>
                         </button> 
+                    </div>
                     </form>
                 </div>
+                
                 <!--insert item-->
                 <div class="heading-box-R" align="center" id="item">
                     <div class="item-box" align="center">
@@ -58,20 +62,17 @@
                 <li><a href="BRANDS/ALL.html"><h2>BRANDS</h2></a>
                     <ul class="sub-menu">
                         <li><a href="BRANDS/SKIN1004/ALL.html">Skin 1004</a></li>
-                        <li><a href="BRANDS/Torrident/ALL.html">Torriden</a></li>
+                        <li><a href="BRANDS/Paula's Choice/ALL.html">Paula's Choice</a></li>
                         <li><a href="BRANDS/Unove/ALL.html">Unove</a></li>
-                        <li><a href="BRANDS/Round Lab/ALL.html">Round lab</a></li>
                         <li><a href="BRANDS/Dove/ALL.html">Dove</a></li>
                     </ul></li>
                 <li><a href="BODY/ALL.html"><h2>BODY</h2></a>
                     <ul class="sub-menu">
-                        <li><a href="BODY/Bodymist/all.html">Bodymist</a></li>
                         <li><a href="BODY/Lotion/all.html">Lotion</a></li>
                         <li><a href="BODY/Scrub Body/all.html">Scrub Body</a></li>
                     </ul></li>
                 <li><a href=""><h2>HAIR</h2></a>
                     <ul class="sub-menu">
-                        <li><a href="HAIR/Treatment/all.html">Treatment</a></li>
                         <li><a href="HAIR/Hairloss/all.html">Hairloss</a></li>
                         <li><a href="HAIR/Oil Repair/all.html">Oil Repair</a></li>
                        
@@ -79,7 +80,7 @@
                 <li><a href=""><h2>FACE</h2></a>
                     <ul class="sub-menu">
                         <li><a href="FACE/Serum/all.html">Serum</a></li>
-                        <li><a href="FACE/Moisturizer/all.html">Moisturizer</a></li>
+                        <li><a href="FACE/Toner/All.html">Serum</a></li>
                     </ul>
                 </ul></li>
         </div>
@@ -100,16 +101,20 @@
         </div>
     </div>
     <!--design body of page-->
-        <div id="body">
-            <div class="title-body">
-                <img src="IMAGES/deal.jpg" alt="deal" width="100%">
-                <h1>BEST ITEMS OF YEAR</h1>
-            </div>
-            <div class="body-box">
-                <div class="body-box-item"><a href="PRODUCT/product1.html" style="text-decoration: none; color: black;">
+    <div id="body">
+        
+        <div class="title-body">
+            <img src="IMAGES/deal.jpg" alt="deal" width="100%">
+            <h1>BEST ITEMS OF YEAR</h1>
+        </div>
+        <div class="countResults">
+            Found <b id="count"></b> results
+        </div>
+            <div class="list">
+                <div class="item"><a href="../../FACE/Toner/product1.html" style="text-decoration: none; color: black;">
                     <img src="IMAGES/face6.jpg" alt="Product 1">
                     <div class="heart"></div>
-                    <p style="margin-top: 10px;">Skin 1004 Hyalu- Cica Toner</p>
+                    <p style="margin-top: 10px;">Skin 1004 Hyalu- Cica Toner1</p>
                     <p style="font-size: 15px;"><del>$22.00</del></p>
                     <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
                     <div>
@@ -120,11 +125,60 @@
                         <i class='bx bxs-star-half' ></i>
                         <p style="font-size: medium; color: darkgray;">(449)</p>
                     </div>
-                </a></div>   
-                <div class="body-box-item"><a href="PRODUCT/product1.html" style="text-decoration: none; color: black;">
+                </a></div>  
+
+                <div class="item"><a href="../../FACE/Toner/product1.html" style="text-decoration: none; color: black;">
+                    <img src="IMAGES/face6.jpg" alt="Product 1">
+                    <div class="heart"></div>
+                    <p style="margin-top: 10px;">Skin 1004 Hyalu- Cica Toner2</p>
+                    <p style="font-size: 15px;"><del>$22.00</del></p>
+                    <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
+                    <div>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                        <p style="font-size: medium; color: darkgray;">(449)</p>
+                    </div>
+                </a></div>
+
+                <div class="item">
+                    <a href="../../FACE/Toner/product1.html" style="text-decoration: none; color: black;">
+                    <img src="IMAGES/face6.jpg" alt="Product 1">
+                    <div class="heart"></div>
+                    <p style="margin-top: 10px;">Skin 1004 Hyalu- Cica Toner3</p>
+                    <p style="font-size: 15px;"><del>$22.00</del></p>
+                    <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
+                    <div>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                        <p style="font-size: medium; color: darkgray;">(449)</p>
+                    </div>
+                </a></div>
+                <div class="item"><a href="../../FACE/Toner/product1.html" style="text-decoration: none; color: black;">
+                    <img src="IMAGES/face6.jpg" alt="Product 1">
+                    <div class="heart"></div>
+                    <p style="margin-top: 10px;">Skin 1004 Hyalu- Cica Toner4</p>
+                    <p style="font-size: 15px;"><del>$22.00</del></p>
+                    <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
+                    <div>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                        <p style="font-size: medium; color: darkgray;">(449)</p>
+                    </div>
+                </a></div>
+                <div class="item">
+                    <a href="../../FACE/Serum/product2.html" style="text-decoration: none; color: black;">
                     <img src="IMAGES/face2.jpg" alt="Product 1">
                     <div class="heart"></div>
-                    <p style="margin-top: 10px;">Skin 1004 Serum Centella </p>
+                    <p style="margin-top: 10px;">Skin 1004 Serum Centella8 </p>
                     <p style="font-size: 15px;"><del>$22.00</del></p>
                     <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
                     <div>
@@ -136,10 +190,10 @@
                         <p style="font-size: medium; color: darkgray;">(549)</p>
                     </div>
                 </a></div> 
-                <div class="body-box-item"><a href="PRODUCT/product1.html" style="text-decoration: none; color: black;">
+                <div class="item"><a href="../../HAIR/Oil Repair/product3.html" style="text-decoration: none; color: black;">
                     <img src="IMAGES/hair3.webp" alt="Product 1">
                     <div class="heart"></div>
-                    <p style="margin-top: 10px;">Unove Deep Damage Treatment EX</p>
+                    <p style="margin-top: 10px;">Unove Deep Damage Treatment EX9</p>
                     <p style="font-size: 15px;"><del>$22.00</del></p>
                     <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
                     <div>
@@ -152,10 +206,10 @@
                     </div>
                 </a></div> 
                
-                <div class="body-box-item"><a href="PRODUCT/product1.html" style="text-decoration: none; color: black;">
+                <div class="item"><a href="../../FACE/Serum/product4.html" style="text-decoration: none; color: black;">
                     <img src="IMAGES/face7.webp" alt="Product 1">
                     <div class="heart"></div>
-                    <p style="margin-top: 10px;">Skin 1004 Hyalu-Cica Serum</p>
+                    <p style="margin-top: 10px;">Skin 1004 Hyalu-Cica Serum10</p>
                     <p style="font-size: 15px;"><del>$22.00</del></p>
                     <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
                     <div>
@@ -167,10 +221,10 @@
                         <p style="font-size: medium; color: darkgray;">(463)</p>
                     </div>
                 </a></div> 
-                <div class="body-box-item"><a href="PRODUCT/product1.html" style="text-decoration: none; color: black;">
+                <div class="item"><a href="../../FACE/Toner/product5.html" style="text-decoration: none; color: black;">
                     <img src="IMAGES/face8.jpg" alt="Product 1">
                     <div class="heart"></div>
-                    <p style="margin-top: 10px;">Skin 1004 Centella Toner</p>
+                    <p style="margin-top: 10px;">Skin 1004 Centella Toner11</p>
                     <p style="font-size: 15px;"><del>$22.00</del></p>
                     <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
                     <div>
@@ -181,12 +235,11 @@
                         <i class='bx bxs-star-half' ></i>
                         <p style="font-size: medium; color: darkgray;">(999)</p>
                     </div>
-                </a></div> 
-                
-                <div class="body-box-item"><a href="PRODUCT/product1.html" style="text-decoration: none; color: black;">
+                </a></div>                 
+                <div class="item"><a href="../../BODY/Lotion/product6.html" style="text-decoration: none; color: black;">
                     <img src="IMAGES/body3.jpg" alt="Product 1">
                     <div class="heart"></div>
-                    <p style="margin-top: 10px;">Paula's Choice Weightless Body Treatment 2% BHA</p>
+                    <p style="margin-top: 10px;">Paula Choice Weightless Body Treatment 2% BHA12</p>
                     <p style="font-size: 15px;"><del>$22.00</del></p>
                     <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
                     <div>
@@ -197,9 +250,16 @@
                         <i class='bx bxs-star-half' ></i>
                         <p style="font-size: medium; color: darkgray;">(469)</p>
                     </div>
-                </a></div> 
-                
+                </a></div>  
             </div>
+            
+                <ul class="listPage">
+                  <li class="active">1</li>
+                  <li>2</li>
+                  <li>3</li> 
+                </ul>
+            
+            
         </div>
     <!--design information of page-->
         <div id="footer">
@@ -233,6 +293,6 @@
         </div>
     <!--finish decor index-->
     
-
+    <script src="script.js"></script>
     </body>
 </html>
