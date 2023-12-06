@@ -237,6 +237,10 @@
     height: max-content;
     padding-top: 200px;
 }
+#body h1{
+    width: 100%;
+    text-align: center;
+}
 #body .frame
 {
     margin-top: 2%;
@@ -255,6 +259,12 @@
     height: 94%;
     display: block;
     border-radius: 20px;
+}
+#body .frame .frame-box h3
+{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 25px;
 }
 #body .frame .frame-box h2
 {
