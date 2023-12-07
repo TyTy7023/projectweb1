@@ -11,7 +11,7 @@
             function sure(){  
               var result = confirm("Bạn có chắc không?");  
               if(result){
-                alert("Thay đổi thành công!")
+                alert("Huỷ đơn thành công!")
               }
               else{
                 alert("Đã hủy bỏ thay đổi")
@@ -50,14 +50,25 @@
                     </div> -->
                 <!--menu in index-->
                     <ul id="main-menu">
-                        <li style="background-color: rgb(227, 229, 230);"><a><h2 style="color: rgb(225, 96, 21);">Thống Kê</h2></a></li>
+                        <li><a href="thongke.html"><h2>Thống Kê</h2></a></li>
                         <li><a href="qlsp.html"><h2>Quản Lý Sản Phẩm</h2></a></li>
                         <li><a href="qlnd.html"><h2>Quản Lý Người Dùng</h2></a></li>
-                        <li><a href="qldh.html"><h2>Quản Lý Đơn Hàng</h2></a></li>  
+                        <li style="background-color: rgb(227, 229, 230);"><a><h2 style="color: rgb(225, 96, 21);">Quản Lý Đơn Hàng</h2></a></li>  
                     </ul>
                 </div>
-
-
+                <div id="body">
+                    <h1>QUẢN LÝ ĐƠN HÀNG</h1>
+                    <form>
+                        <input type="text" placeholder="Tên đơn" class="findBox">
+                        </input>
+                        <label for="startDate">Ngày bắt đầu:</label>
+                        <input type="date" id="startDate" >
+                        <label for="endDate">Ngày kết thúc:</label>
+                        <input type="date" id="endDate">
+                        <button type="button" onclick="sure();">Tìm đơn</button>
+                    </form>
+                
+                </div>
 
         <!--design information of page-->
         <div id="footer">
