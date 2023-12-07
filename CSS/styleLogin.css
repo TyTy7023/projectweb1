@@ -2,6 +2,19 @@
     margin: 0;
     padding: 0;
 }
+.header{
+    height:280px;
+    width: 100%;
+    /* display:flex; */
+}
+.header.logo{
+    display:block;
+    width: 20%;
+}
+.back{
+    display:block;
+    width: 10%;
+}
 #heading
 {
     width: 100%;
