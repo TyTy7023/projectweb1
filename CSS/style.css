@@ -67,7 +67,7 @@ margin-left: 50%;
 }
 /*item of heading*/
 #item
-{
+{   
     align-items: center;
     font-size: 30px;
     display: flex;
@@ -76,7 +76,12 @@ margin-left: 50%;
     width: 15%;
 }
 .find{
-    
+    margin-top: 3%;
+    width: 50%;
+    height: 30px;
+}
+.find:hover{
+    background-color: #aeaeae;
 }
 #item .item-box {
     width: 30%;
@@ -84,7 +89,6 @@ margin-left: 50%;
     display: block;
     margin-top: 3%;
     position: relative;
-    
     white-space: nowrap; 
     text-overflow: ellipsis;
 }
@@ -109,7 +113,7 @@ margin-left: 50%;
     left: 0;
     width: 150px; /* Set the width of the menu */
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 25px 9px 29px 15px rgba(10, 10, 10, 0.2);
     border-radius: 4px;
     z-index: 1;
 }
@@ -396,15 +400,17 @@ margin-left: 50%;
     list-style: none;
 }
 .listPage li{
-    background-color: grey;
+    background-color: #f1f1f1;
     padding: 15px;
     display: inline-block;
     margin:0 10px ;
     cursor: pointer;
 }
 .listPage .active{
-    background-color: #f2f2f2;
     color: black;
+}
+.listPage li:hover{
+    background-color: #aaa8a8;
 }
 /*design footer of shop*/
 #footer
