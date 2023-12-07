@@ -11,7 +11,7 @@
             function sure(){  
               var result = confirm("Bạn có chắc không?");  
               if(result){
-                alert("Huỷ đơn thành công!")
+                alert("Thay đổi thành công!")
               }
               else{
                 alert("Đã hủy bỏ thay đổi")
@@ -56,19 +56,137 @@
                         <li style="background-color: rgb(227, 229, 230);"><a><h2 style="color: rgb(225, 96, 21);">Quản Lý Đơn Hàng</h2></a></li>  
                     </ul>
                 </div>
-                <div id="body">
+                <div id="body" style="height: 545px;">
                     <h1>QUẢN LÝ ĐƠN HÀNG</h1>
-                    <form>
+                    <div align="center">
                         <input type="text" placeholder="Tên đơn" class="findBox">
                         </input>
                         <label for="startDate">Ngày bắt đầu:</label>
                         <input type="date" id="startDate" >
                         <label for="endDate">Ngày kết thúc:</label>
                         <input type="date" id="endDate">
-                        <button type="button" onclick="sure();">Tìm đơn</button>
-                    </form>
-                
-                </div>
+                        <a href="qldh_rs.html"><button type="button">Tìm đơn</button></a>
+                    </div>
+                    <h2>DANH SÁCH ĐƠN HÀNG</h2>
+                    <div class="title-box" >
+                        <div class="title-box-1"  >
+                            <p style="font-size: larger;"><b>Tên</b></p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;"><b>SĐT</b></p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;"><b>Tình trạng</b></p>
+                        </div>
+                        <div class="title-box-2">
+                            <p style="font-size: larger;"><b>Địa chỉ</b></p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;"><b>Thời gian đặt</b></p>
+                        </div>
+                        <div class="title-box-3">
+                            <p style="font-size: larger;"><b>Chi Tiết</b></p>
+                        </div>
+                        <div class="title-box-4">
+                            <p style="font-size: larger;"><b>Thao tác</b></p>
+                        </div>
+                    </div>
+                    <div class="info-box" style="height: 50px;">
+                        <div class="title-box-1" >
+                            <p style="font-size: larger;">Tèo</p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;">0649 526 452</p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;">Đang giao</p>
+                        </div>
+                        <div class="title-box-2">
+                            <p style="font-size: larger;">Quận 12, tp.HCM</p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;">10/12/2023</p>
+                        </div>
+                        <div class="title-box-3">
+                            <a href="../Orderhistory.html" style="text-decoration: none; font-size: larger; color: black;"><p>Đơn</p></a>
+                        </div>
+                        <div class="title-box-4"  style="margin:auto auto;">
+                            <button type="button" onclick="sure();" style="width: 40%; margin-left: 8%;">c.bị</button>
+                            <button type="button" onclick="sure();" style="width: 40%;">huỷ</button>
+                        </div>
+                    </div>
+                    <div class="info-box" style="height: 50px;;">
+                        <div class="title-box-1" >
+                            <p style="font-size: larger; margin-top: %">Xĩu</p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;">0644 321 956</p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;">Đang chuẩn bị</p>
+                        </div>
+                        <div class="title-box-2">
+                            <p style="font-size: larger;">Quận 9, tp.HCM</p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;">8/7/2023</p>
+                        </div>
+                        <div class="title-box-3">
+                            <a href="../Orderhistory.html" style="text-decoration: none; font-size: larger; color: black;"><p>Đơn</p></a>
+                        </div>
+                        <div class="title-box-4"  style="margin:auto auto;">
+                            <button type="button" onclick="sure();" style="width: 40%; margin-left: 8%;">c.bị</button>
+                            <button type="button" onclick="sure();" style="width: 40%;">huỷ</button>
+                        </div>
+                    </div>
+                    <div class="info-box" style="height: 50px;">
+                        <div class="title-box-1" >
+                            <p style="font-size: larger;">Ngang</p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;">0984 646 253</p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;">Đang giao</p>
+                        </div>
+                        <div class="title-box-2">
+                            <p style="font-size: larger;">Thủ Đức, tp.Thủ Đức</p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;">6/9/2023</p>
+                        </div>
+                        <div class="title-box-3">
+                            <a href="../Orderhistory.html" style="text-decoration: none; font-size: larger; color: black;"><p>Đơn</p></a>
+                        </div>
+                        <div class="title-box-4"  style="margin:auto auto;">
+                            <button type="button" onclick="sure();" style="width: 40%; margin-left: 8%;">giao</button>
+                            <button type="button" onclick="sure();" style="width: 40%;">huỷ</button>
+                        </div>
+                    </div>
+                    <div class="info-box" style="height: 50px; margin-bottom: 2%;">
+                        <div class="title-box-1" >
+                            <p style="font-size: larger;">Méo</p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;">0644 546 322</p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;">Đã Huỷ</p>
+                        </div>
+                        <div class="title-box-2">
+                            <p style="font-size: larger;">Tây Hồ, Hà Nội</p>
+                        </div>
+                        <div class="title-box-1">
+                            <p style="font-size: larger;">11/11/2023</p>
+                        </div>
+                        <div class="title-box-3">
+                            <a href="../Orderhistory.html" style="text-decoration: none; font-size: larger; color: black;"><p>Đơn</p></a>
+                        </div>
+                        <div class="title-box-4"  style="margin:auto auto;">
+                            <button type="button" style="width: 80%; margin-left: 8%;">Đã huỷ</button>
+                        </div>
+                    </div>
+            </div>
 
         <!--design information of page-->
         <div id="footer">
