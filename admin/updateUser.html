@@ -12,7 +12,16 @@
             function sure(){  
               var result = confirm("Bạn có chắc chắn không?");  
               if(result){
-                alert("Thêm thành công!")
+                alert("Sửa thành công!")
+              }
+              else{
+                alert("Đã hủy bỏ thay đổi")
+              }
+            }
+            function deleted(){  
+              var result = confirm("Bạn có chắc chắn không?");  
+              if(result){
+                alert("xoá ảnh thành công!")
               }
               else{
                 alert("Đã hủy bỏ thay đổi")
@@ -59,29 +68,30 @@
                 </div>
 
         <div id="body">
-            <h1>THÊM SẢN PHẨM</h1>
+            <h1>SỬA THÔNG TIN NGƯỜI DÙNG</h1>
             <table style="width: 100%;">
                 <tr>
-                    <td><p style="font-size: 30px;">Tên sản phẩm</p ></td>
-                    <td><input type="text" name="name" style="width: 60%;"></td>
+                    <td><p style="font-size: 30px;">Tên người dùng</p ></td>
+                    <td><input type="text" placeholder="Tèo" name="name" style="width: 60%;"></td>
                 </tr>
                 <tr>
-                    <td><p style="font-size: 30px;">Giá sản phẩm</p></td>
-                    <td><input type="text" name="price" style="width: 60%;"></td>
+                    <td><p style="font-size: 30px;">Số điện thoại</p></td>
+                    <td><input type="text" placeholder="0154 456 965" name="price" style="width: 60%;"></td>
                 </tr>
                 <tr>
-                    <td><p style="font-size: 30px;">Ảnh sản phẩm</p></td>
-                    <td><input type="file" name="image" style="width: 60%;"></td>
+                    <td><p style="font-size: 30px;">Ảnh người dùng</p></td>
+                    <td><input type="file" name="image"  style="width: 60%;"></td>
+                    <td><button style="margin-left: -350px; width: 100px;" onclick="deleted()">Xóa</button></td>
                 </tr>
                 <tr>
-                    <td><p style="font-size: 30px;">Mô tả sản phẩm</p></td>
+                    <td><p style="font-size: 30px;">Mô tả tài khoản</p></td>
                     <td><textarea name="description" cols="30" rows="10" style="width: 60%;"></textarea></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button type="submit" onclick="sure()" style="width: 20%; height: 50px;">thêm sản phẩm</button></td>
+                    <td colspan="2"><button type="submit" onclick="sure()" style="width: 20%; height: 50px;">Sửa Thông tin</button></td>
                 </tr>
             </table>
-            <a href="qlsp.html"><button type="submit" style="width: 20%; height: 50px; margin-top: 0;">Quay lại</button></a>
+            <a href="qlnd.html"><button type="submit" style="width: 20%; height: 50px; margin-top: 0;">Quay lại</button></a>
         </div>
         <div id="footer">
             <div class="footer-box">

@@ -7,7 +7,6 @@
     width: 100%;
     height: max-content;
     padding-top: 200px;
-    margin: 0 0 50px 0;
 }
 #body-1 .title-select-admin{
     width: 90%;
@@ -82,8 +81,9 @@
     border-right:2px solid rgb(131, 131, 131) ;
 }
 .info-box-1 p{
-    margin:90px 70px;
+    margin:32% auto;
     width: max-content;
+    align-items: middle;
 
 }
 .info-box-1 img{
@@ -94,10 +94,12 @@
     display:block;
     width:40%;
     border-right:2px solid rgb(131, 131, 131) ;
+    padding: 2% 0;
 }
 .info-box-2 p{
     width: 80%;
     margin:5px auto;
+
 }
 .info-box-2 span{
     width: 80%;
@@ -110,8 +112,6 @@
 }
 .info-box-3 p{
     width:max-content;
-    margin:7px auto;
-
 }
 .info-box-4{
     display:block;
@@ -255,6 +255,9 @@
     flex-wrap: nowrap;
     border-bottom: 1px solid #cfcccc;
     border-top: 1px solid #cfcccc;
+}
+#body .frame p{
+    font-size: 25px;
 }
 #body .frame .frame-box
 {

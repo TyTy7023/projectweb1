@@ -8,7 +8,96 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Order history</title>
         <style>
-        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        body {
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        .product-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-height: 1200px;
+    max-width: 1150px;
+    overflow-y: auto;
+    text-align: center;
+    margin: 0 auto;
+     /* Thêm viền màu đen */
+     /* Bo tròn góc viền */
+    padding: 50px ; 
+
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 15px;
+}
+.item img {
+    max-width: 17%;
+    max-height: 300px;
+    border-radius: 5px;
+    padding:10px ;
+    margin-right: auto;
+        }
+.product-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .product-info h2 {
+            font-size: 16px;
+            margin: 0;
+            white-space: nowrap; /* Chống chữ xuống dòng */
+            text-align: center; /* Căn giữa theo chiều ngang */
+        }
+        .product-quantity {
+            font-size: 14px;
+            color: #888;
+            text-align: right; /* Căn phải */
+        }
+.product-info img {
+    
+    max-width: 17%;
+    max-height: 300px;
+    border-radius: 5px;
+    
+    margin-right: auto;
+}
+
+.product-details {
+    max-width: 100%; /* Giới hạn chiều rộng tối đa */
+}
+
+.button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
 
         </style>
 </head>
@@ -83,7 +172,7 @@ if (isLoggedIn) {
         </div>
     </div>
     <header>
-        <h1>chi tiết mua hàng</h1>
+        <h1>Chi tiết mua hàng</h1>
     </header>
     <section>
         
