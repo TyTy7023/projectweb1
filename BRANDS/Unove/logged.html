@@ -19,7 +19,7 @@
                 <!--insert search box-->
                 <div class="heading-box-C">
                     <form id="search-box"> 
-                        <input type="text" placeholder="  Tìm Kiếm..." id="search-text"> 
+                        <input type="text" placeholder="  Search..." id="search-text"> 
                         <button type="submit" id="search-icon">
                             <i class='bx bx-search'></i>
                         </button> 
@@ -27,25 +27,63 @@
                 </div>
                 <!--insert item-->
                 <div class="heading-box-R" align="center" id="item">
+                    <div class="item-box" align="center">
+                       
+                        <p style="font-size: 35px;"> 
+                             <i  class='bx bxs-shopping-bags'></i> 
+                            <p style="font-size: small;">giỏ hàng</p>
+                            </p>
+                        
                     
-                    <div class="item-box" align="center">
-                        <a href="">
-                            <i class='bx bxs-shopping-bags'></i>
-                            <p style="font-size: small;">shopping<p>
-                        </a>
-                    </div>
-                    <div class="item-box" align="center">
-                        <a href="">
-                            <i class='bx bxs-user-circle' ></i>
-                            <p style="font-size: small;">login<p>
-                        </a>
-                    </div>
-                    <div class="item-box" align="center">
-                        <a href="">
-                            <i style="margin-right: 10px;"class='bx bxs-chat' ></i>
-                            <p style="font-size: small; margin-right: 10px;">chat<p>
-                        </a>
-                    </div>
+                </div>
+                
+                <div class="item-box" align="center">
+                    <a href="">
+                        <i class='bx bxs-user-circle'></i>
+                        <p style="font-size: small;">Sen Kim</p>
+                        <!-- Menu structure -->
+                        <div class="menu">
+                            <ul>
+                               <a href="../index.html"> <li>đăng xuất</li></a>
+                                <li><a href="../Orderhistory.html">Lịch Sử đơn hàng</a></li>
+                                <li><a href="../AccountInfo.html">Thông tin tài khoản</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                
+                    <script>
+    var isLoggedIn = false;
+
+    function toggleLogin() {
+        if (isLoggedIn) {
+            // Thực hiện các bước đăng xuất ở đây (nếu cần)
+            alert('Bạn đã đăng xuất.');
+
+            // Thay đổi trạng thái và nội dung khi đăng xuất
+            document.getElementById('loginButton').innerHTML = 
+                '<a href="#" onclick="toggleLogin()">' +
+                    '<i class="bx bxs-user-circle"></i>' +
+                    '<p style="font-size: small;">Login</p>' +
+                '</a>';
+            
+            isLoggedIn = false;
+        } else {
+            // Thực hiện các bước đăng nhập ở đây (nếu cần)
+            alert('Bạn đã đăng nhập.');
+
+            // Thay đổi trạng thái và nội dung khi đăng nhập
+            document.getElementById('loginButton').innerHTML = 
+                '<a href="#" onclick="toggleLogin()">' +
+                    '<i class="bx bxs-user-circle"></i>' +
+                    '<p style="font-size: small;">Logout</p>' +
+                '</a>';
+            
+            isLoggedIn = true;
+        }
+    }
+</script>
+                   
                 </div>
             </div>
         <!--item to top of page-->
@@ -55,17 +93,17 @@
                 </a>
             </div>
         <!--menu in index-->
-        <ul id="main-menu">
+            <ul id="main-menu">
                 
-            <li><a href="../../INDEX.html"><h2>BRANDS</h2></a>
-            </li>
-            <li><a href="../Paula's Choice/ALL.html"><h2>PAULA'S CHOICE</h2></a>
-            </li>
-            <li><a href="../Unove/ALL.html"><h2>UNOVE</h2></a>
-            </li>
-            <li><a href="../SKIN1004/ALL.html"><h2>SKIN 1004</h2></a>
-            </li>
-        </ul>
+                <li><a href="../../INDEX.html"><h2>BRANDS</h2></a>
+                </li>
+                <li><a href="../Paula's Choice/ALL.html"><h2>Paula's Choice</h2></a>
+                </li>
+                <li><a href="../Dove/ALL.html"><h2>DOVE</h2></a>
+                </li>
+                <li><a href="../SKIN1004/ALL.html"><h2>SKIN 1004</h2></a>
+                </li>
+            </ul>
         </div>
         <div style="padding-top: 120px;">
             <div id="advertisement" >
@@ -86,13 +124,13 @@
             <div id="wrapper">
                 <div id="body">
                     <div id="body-title">
-                        <h1>Dove</h1>
+                        <h1>UNOVE</h1>
                     </div>
                         <div class="list">
-                            <div class="item"><a href="../../PRODUCT/product13.html" style="text-decoration: none; color: black;">
-                                <img src="../../IMAGES/body5.jpg" alt="Product 1">
+                            <div class="item"><a href="../../PRODUCT/product7.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/hair1.jpg" alt="Product 1">
                                 <div class="heart"></div>
-                                <p style="margin-top: 10px;">Sữa tắm dưỡng thể Dove Da mịn thơm mát 500g</p>
+                                <p style="margin-top: 10px;">Unove Deep damage treatment EX</p>
                                 <p style="font-size: 15px;"><del>22.00 $</del></p>
                                 <p><span>10.99 </span>$</p>
                                 <div>
@@ -101,28 +139,13 @@
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star-half' ></i>
-                                    <p style="font-size: medium; color: darkgray;">(449)</p>
-                                </div>
-                            </a>    </div>  
-                            <div class="item"><a href="../../PRODUCT/product11.html" style="text-decoration: none; color: black;">
-                                <img src="../../IMAGES/body1.jpg" alt="Product 1">
-                                <div class="heart"></div>
-                                <p style="margin-top: 10px;">Kem dưỡng da Dove</p>
-                                <p style="font-size: 15px;"><del>22.00 $</del></p>
-                                <p><span>10.99 </span>$</p>
-                                <div>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star-half' ></i>
-                                    <p style="font-size: medium; color: darkgray;">(449)</p>
+                                    <p style="font-size: medium; color: darkgray;">(469)</p>
                                 </div>
                             </a></div> 
-                            <div class="item"><a href="../../PRODUCT/product10.html" style="text-decoration: none; color: black;">
-                                <img src="../../IMAGES/hair5.jpg" alt="Product 1">
+                            <div class="item"><a href="../../PRODUCT/product9.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/hair3.jpg" alt="Product 1">
                                 <div class="heart"></div>
-                                <p style="margin-top: 10px;">Dầu Gội Dove Nhật Bơ & Dầu Argan Giúp Phục Hồi Tóc Hư Tổn 500G</p>
+                                <p style="margin-top: 10px;">Unove Deep damage Repair shampoo</p>
                                 <p style="font-size: 15px;"><del>22.00 $</del></p>
                                 <p><span>10.99 </span>$</p>
                                 <div>
@@ -134,8 +157,37 @@
                                     <p style="font-size: medium; color: darkgray;">(469)</p>
                                 </div>
                             </a></div>
+                            <div class="item"><a href="../../PRODUCT/product3.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/hair3.webp" alt="Product 1">
+                                <div class="heart"></div>
+                                <p style="margin-top: 10px;">Unove silk oil essence</p>
+                                <p style="font-size: 15px;"><del>22.00 $</del></p>
+                                <p><span>10.99 </span>$</p>
+                                <div>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half' ></i>
+                                    <p style="font-size: medium; color: darkgray;">(469)</p>
+                                </div>
+                            </a></div>
+                            <div class="item"><a href="../../PRODUCT/product8.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/hair4.jpg" alt="Product 1">
+                                <div class="heart"></div>
+                                <p style="margin-top: 10px;">Unove No-wash water Ampoule treatment</p>
+                                <p style="font-size: 15px;"><del>22.00 $</del></p>
+                                <p><span>10.99 </span>$</p>
+                                <div>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half' ></i>
+                                    <p style="font-size: medium; color: darkgray;">(469)</p>
+                                </div>
+                            </a></div> 
                              
-                           
  
                         </div>
                         <ul class="listPage">
@@ -143,6 +195,7 @@
                             <li>2</li>
                             <li>3</li> 
                           </ul>
+                       
                     </div>
                     
             </div>
@@ -174,6 +227,6 @@
                     <li><div class="info-contact"><i class='bx bxs-phone-call' ></i><p>1900.7007</p></div></li>
                 </ul>
             </div>
-        </div>
+        </div>  
     </body>
 </html>
