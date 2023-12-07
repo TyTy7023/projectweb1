@@ -3,39 +3,33 @@
     margin: 0;
     padding: 0;
 }
-#body{
+#body-1{
     width: 100%;
     height: max-content;
-    padding-top: 150px;
+    padding-top: 200px;
     margin: 0 0 50px 0;
 }
-#body h2{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-#body .title-select-admin{
+#body-1 .title-select-admin{
     width: 90%;
     display: flex;
     margin: auto auto;
 }
-#body .title-select-admin p{
+#body-1 .title-select-admin h1{
     width:max-content;
     margin: auto auto;
 }
-#body .select-admin-box {
-    width:90%;
+#body-1 .select-admin-box {
+    width:80%;
     margin: auto auto;
     height:500;
 }
 .title-box{
     width: 100%;
     border: 2px solid rgb(131, 131, 131) ;
-    height: 40px;
+    height: 50px;
     display:flex;
     background-color: #f1f1f1;
-    font-size: 20px;
-    /* border-radius: 9px; */
+    font-size: 25px;
     margin-top: 20px;
 }
 .title-box-1{
@@ -45,7 +39,7 @@
 }
 .title-box-1 p{
     width:max-content;
-    margin:7px auto;
+    margin:11px auto;
 
 }
 .title-box-2{
@@ -55,7 +49,7 @@
 }
 .title-box-2 p{
     width:max-content;
-    margin:7px auto;
+    margin:11px auto;
 }
 .title-box-3{
     display:block;
@@ -64,7 +58,7 @@
 }
 .title-box-3 p{
     width:max-content;
-    margin:7px auto;
+    margin:11px auto;
 }
 .title-box-4{
     display:block;
@@ -72,27 +66,29 @@
 }
 .title-box-4 p{
     width:max-content;
-    margin:7px auto;
+    margin:11px auto;
 }
 .info-box{
     width: 100%;
     border: 2px solid rgb(131, 131, 131) ;
-    height: 150px;
+    height: max-content;
     display:flex;
     font-size: 20px;
-    /* border-radius: 9px; */
-    /* margin-top: 20px; */
+
 }
 .info-box-1{
     display:block;
     width:20%;
-    
     border-right:2px solid rgb(131, 131, 131) ;
 }
 .info-box-1 p{
-    width:max-content;
-    margin:7px auto;
+    margin:90px 70px;
+    width: max-content;
 
+}
+.info-box-1 img{
+    margin:1% 15%;
+    width:70%
 }
 .info-box-2{
     display:block;
@@ -100,8 +96,12 @@
     border-right:2px solid rgb(131, 131, 131) ;
 }
 .info-box-2 p{
-    width:max-content;
-    margin:7px auto;
+    width: 80%;
+    margin:5px auto;
+}
+.info-box-2 span{
+    width: 80%;
+    margin:5px auto;
 }
 .info-box-3{
     display:block;
@@ -255,10 +255,6 @@
     flex-wrap: nowrap;
     border-bottom: 1px solid #cfcccc;
     border-top: 1px solid #cfcccc;
-}
-#body .frame p
-{
-    font-size: 25px;
 }
 #body .frame .frame-box
 {
