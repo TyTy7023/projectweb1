@@ -94,26 +94,12 @@
                 </a>
             </div>
         <!--menu in index-->
-            <ul id="main-menu">
-                
-                <li><label for="category"><h2>Danh mục:</h2></label>
-                    <select id="category">
-                      <option value="">Tất cả danh mục</option>
-                      <option value="shampoo">Skin1004</option>
-                      <option value="essence">Paula's Choice</option>
-                      <option value="essence">Unove</option>
-                      <option value="essence">Dove</option>
-                      <!-- Thêm các danh mục khác nếu cần -->
-                    </select>
-                </li>
-                   <li> <label for="minPrice"><h2>Giá tối thiểu:</h2></label>
-                    <input type="number" id="minPrice" placeholder="Nhập giá tối thiểu">
-                   </li>
-                  <li>  <label for="maxPrice"><h2>Giá tối đa:</h2></label>
-                    <input type="number" id="maxPrice" placeholder="Nhập giá tối đa"></li>
-              
-               
-            </ul>
+        <ul id="main-menu">
+            <li><a href="../../BRANDS/SKIN1004/ALL.html"><h2>SKIN1004</h2></a></li>
+            <li><a href=""> <h2>Paula's Choice</h2></a></li>
+            <li><a href=""><h2>Unove</h2></a></li>
+            <li><a href=""><h2>Dove</h2></a></li>
+        </ul>
         </div>
         <!--design advertisement-->
         <div style="padding-top: 120px;">
@@ -135,16 +121,35 @@
         <!--design body of page-->
         <div id="wrapper">
         
-           <ul id="sidebar">
-         
-          <li> <a href=""><h1>MENU</h1></a>
-            
-            <li><a href="../BRANDS/SKIN1004/ALL.html">Skin 1004</a></li>
-            <li><a href="../BRANDS/Paula's Choice/ALL.html">Torriden</a></li>
-            <li><a href="../BRANDS/Unove/ALL.html">Unove</a></li>
-            <li><a href="../BRANDS/Dove/ALL.html">Dove</a></li>
-        </li>
-    </ul>
+            <ul id="sidebar">
+                <li>
+                  <a href="#"><h1>MENU</h1></a>
+                </li>
+                <li>
+                  <h2>Tìm theo tên</h2>
+                  <input type="text" placeholder="nhập tên">
+                </li>
+                <li>
+                  <label for="category"><h2>Danh mục:</h2></label>
+                  <select id="category">
+                    <option value="">Tất cả danh mục</option>
+                    <option value="shampoo">SKIN1004</option>
+                    <option value="essence">Paula's Choice</option>
+                    <option value="essence">Unove</option>
+                    <option value="essence">Dove</option>
+                    <!-- Thêm các danh mục khác nếu cần -->
+                  </select>
+                </li>
+                <li>
+                  <label for="minPrice"><h2>Giá tối thiểu:</h2></label>
+                  <input type="number" id="minPrice" placeholder="giá tối thiểu" min="1" max="1000000">
+                </li>
+                <li>
+                  <label for="maxPrice"><h2>Giá tối đa:</h2></label>
+                  <input type="number" id="maxPrice" placeholder="giá tối đa" min="1" max="2000000">
+                </li>
+                <button class="find">Tìm kiếm</button>
+              </ul>
 
             <div id="body">
             <div id="body-title">
