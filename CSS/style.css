@@ -73,7 +73,7 @@ margin-left: 50%;
     display: flex;
 }
 .item submit{
-    width: 15%;
+    width: 0%;
 }
 .find{
     margin-top: 3%;
@@ -104,7 +104,12 @@ margin-left: 50%;
      /* Added to enable flex layout */
     align-items: center; /* Center content vertically */
 }
-
+#item .item-box i{
+    font-size: 40px;
+}
+#item .item-box i:hover {
+    opacity: 0.5;
+}
 /* Styling for the menu */
 #item .item-box .menu {
     display: none;
@@ -113,7 +118,6 @@ margin-left: 50%;
     left: 0;
     width: 150px; /* Set the width of the menu */
     background-color: #fff;
-    box-shadow: 25px 9px 29px 15px rgba(10, 10, 10, 0.2);
     border-radius: 4px;
     z-index: 1;
 }
