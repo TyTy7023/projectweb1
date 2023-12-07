@@ -43,12 +43,11 @@
                 <div class="item-box" align="center">
                     <a href="../ITEMS/signup.html">
                         <i class='bx bxs-user-circle'></i>
-                        <p style="font-size: small;">sign up</p>
+                        <p style="font-size: small;">đăng kí</p>
                         <!-- Menu structure -->
                         <div class="menu">
                             <ul>
-                                <li>Order history</li>
-                                <li>Account Information</li>
+                                
                             </ul>
                         </div>
                     </a>
@@ -364,15 +363,15 @@
             </div>
             <section class="cart">
                 <i class='bx bx-x'></i>
-                <h2>Cart</h2>
-                <form action="">
+                <h2>giỏ hàng</h2>
+                <form id="checkoutForm" onsubmit="handleBuy(event)" action="">
                     <table>
                         <thead>
                             <tr>
-                                <th>Product</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                                <th>Chosed</th>
+                                <th>Sản phẩm</th>
+                                <th>Gía</th>
+                                <th>Số lượng</th>
+                                <th>Xóa</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -391,7 +390,7 @@
                         </tbody>
                     </table>
                     <div class="address-section">
-                        <label for="address-select">Choose Address:</label>
+                        <label for="address-select">Chọn địa chỉ:</label>
                         <select id="address-select">
                             <!-- Add options dynamically based on user addresses -->
                             <option value="address1">315 Trần Hưng Đạo</option>
@@ -399,15 +398,25 @@
                             <!-- Add more options as needed -->
                         </select>
                         
-                        <p>Or enter a new address:</p>
-                        <textarea id="new-address" rows="4" placeholder="Enter your new address"></textarea>
+                        <p>Hoặc nhập địa chỉ mới:</p>
+                        <textarea id="new-address" rows="4" placeholder="Nhập địa chỉ mới"></textarea>
                     </div>
                     <div style="text-align: right;" class="price-total">
-                        <p style="font-weight: bold;">Total price: <span> 0  </span>$</p>
+                        <p style="font-weight: bold;">Tổng số tiền: <span> 0  </span>$</p>
                     </div>
-                    <button>Buy</button>
+                    <button>Mua</button>
 
                 </form>
+                <script>
+                    function handleBuy(event) {
+                        event.preventDefault(); // Prevents the form from submitting normally
+            
+                        // Perform any additional logic here (e.g., send data to the server)
+            
+                        // Show a success message
+                        alert('Bạn phải đăng nhập mới mua hàng được');
+                    }
+                </script>
             </section>
         </div>
         <div id="footer">
