@@ -409,6 +409,7 @@ margin-left: 50%;
 .listPage .active{
     color: black;
 }
+
 .listPage li:hover{
     background-color: #aaa8a8;
 }
@@ -548,7 +549,7 @@ margin-left: 50%;
     border-radius: 2px;
     padding: 0px 3%;
     padding-top:1%; 
-}height:max-content
+}
 #details .info-details .info1{
     display:block;
     width:100%;
