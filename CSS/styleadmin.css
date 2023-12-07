@@ -9,6 +9,11 @@
     padding-top: 150px;
     margin: 0 0 50px 0;
 }
+#body h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
 #body .title-select-admin{
     width: 90%;
     display: flex;
@@ -250,6 +255,10 @@
     flex-wrap: nowrap;
     border-bottom: 1px solid #cfcccc;
     border-top: 1px solid #cfcccc;
+}
+#body .frame p
+{
+    font-size: 25px;
 }
 #body .frame .frame-box
 {

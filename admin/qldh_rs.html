@@ -6,13 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../CSS/styleadmin.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        
-        <title>COCONUT-ADMIM</title>
+        <title>COCONUT-ADMIN-THỐNG KÊ</title>
         <script>  
             function sure(){  
-              var result = confirm("Bạn có chắc chắn không?");  
+              var result = confirm("Bạn có chắc không?");  
               if(result){
-                alert("Sửa thành công!")
+                alert("Huỷ đơn thành công!")
               }
               else{
                 alert("Đã hủy bỏ thay đổi")
@@ -54,35 +53,25 @@
                         <li><a href="thongke.html"><h2>Thống Kê</h2></a></li>
                         <li><a href="qlsp.html"><h2>Quản Lý Sản Phẩm</h2></a></li>
                         <li><a href="qlnd.html"><h2>Quản Lý Người Dùng</h2></a></li>
-                        <li><a href="qldh.html"><h2>Quản Lý Đơn Hàng</h2></a></li>  
+                        <li style="background-color: rgb(227, 229, 230);"><a><h2 style="color: rgb(225, 96, 21);">Quản Lý Đơn Hàng</h2></a></li>  
                     </ul>
                 </div>
+                <div id="body" style="height: 550px;">
+                    <h1>QUẢN LÝ ĐƠN HÀNG</h1>
+                    <div align="center">
+                        <input type="text" placeholder="Tên đơn" class="findBox">
+                        </input>
+                        <label for="startDate">Ngày bắt đầu:</label>
+                        <input type="date" id="startDate" >
+                        <label for="endDate">Ngày kết thúc:</label>
+                        <input type="date" id="endDate">
+                        <a href="qldh_rs.html"><button type="button">Tìm đơn</button></a>
+                    </div>
+                    <h2>KẾT QUẢ TÌM KIẾM</h2>
+                    
+                </div>
 
-        <div id="body">
-            <h1>SỬA SẢN PHẨM</h1>
-            <table style="width: 100%;">
-                <tr>
-                    <td><p style="font-size: 30px;">Tên sản phẩm</p ></td>
-                    <td><input type="text" name="name" style="width: 60%;"></td>
-                </tr>
-                <tr>
-                    <td><p style="font-size: 30px;">Giá sản phẩm</p></td>
-                    <td><input type="text" name="price" style="width: 60%;"></td>
-                </tr>
-                <tr>
-                    <td><p style="font-size: 30px;">Ảnh sản phẩm</p></td>
-                    <td><input type="file" name="image" style="width: 60%;"></td>
-                </tr>
-                <tr>
-                    <td><p style="font-size: 30px;">Mô tả sản phẩm</p></td>
-                    <td><textarea name="description" cols="30" rows="10" style="width: 60%;"></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><button type="submit" onclick="sure()" style="width: 20%; height: 50px;">Sửa sản phẩm</button></td>
-                </tr>
-            </table>
-            <a href="qlsp.html"><button type="submit" style="width: 20%; height: 50px; margin-top: 0;">Quay lại</button></a>
-        </div>
+        <!--design information of page-->
         <div id="footer">
             <div class="footer-box">
                 <img src="../IMAGES/logo.png" alt="COCONUT-cosmetics " width="100%">
@@ -112,5 +101,8 @@
                 </ul>
             </div>
         </div>
+    <!--finish decor index-->
+    
+        <script src="script.js"></script>
     </body>
 </html>
