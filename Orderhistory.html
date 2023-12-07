@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/styleadmin.css">
         <link rel="stylesheet" href="../CSS/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Order history</title>
         <style>
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #f1f1f1;
+            margin-top: 1%;
             padding: 10px;
             text-align: center;
         }
@@ -19,10 +20,7 @@
         }
         body {
             
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
-            background-color: #f4f4f4;
         }
         .product-container {
     display: flex;
@@ -112,7 +110,7 @@
             <form class="filter"> 
              
                 <input type="text" placeholder="  Search..." id="search-text"> 
-             <div class="item submit">
+             <div class="submit">
                 <button onclick="searchProducts()" type="submit" id="search-icon">
                     <i class='bx bx-search'></i>
                 </button> 
@@ -124,9 +122,9 @@
            
         
         <div class="item-box" align="center">
-            <a href="../ITEMS/login.html">
-                <i class='bx bxs-user-circle'></i>
-                <p style="font-size: small;">sign in</p>
+            <a href="INDEX.html">
+                <i class='bx bxs-user-circle' style="font-size: 50px;"></i>
+                <p style="font-size: medium;">đăng xuất</p>
                 <!-- Menu structure -->
                 <div class="menu">
                     <ul>
@@ -175,8 +173,99 @@ if (isLoggedIn) {
         <h1>Chi tiết mua hàng</h1>
     </header>
     <section>
-        
-        
+        <div id="body-1" style="padding-top:30px ;">
+            <div class="title-select-admin">
+                <h1 style="font-size: 30px;">ĐƠN HÀNG ĐÃ ĐẶT</h1>
+            </div>
+            <a href="INDEX00.html"><button style="width: 20%; height: 50px; font-size: 15px; margin-bottom: 0; margin-left: 10%; font-size: 20px;">Quay lại</button></a> 
+            <div class="select-admin-box">
+                <div class="title-box">
+                    <div class="title-box-1">
+                        <p style="font-size: larger;"><b>Hình Ảnh</b></p>
+                    </div>
+                    <div class="title-box-1">
+                        <p style="font-size: larger;"><b>Thương Hiệu</b></p>
+                    </div>
+                    <div class="title-box-2">
+                        <p style="font-size: larger;"><b>Chi Tiết</b></p>
+                    </div>
+                    <div class="title-box-3">
+                        <p style="font-size: larger;"><b>Số lượng</b>
+                    </div>
+                    <div class="title-box-4">
+                        <p style="font-size: larger;"><b>Giá</b></p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box-1">
+                      <img src="../IMAGES/hair5.jpg">
+                    </div>
+                    <div class="info-box-1"> 
+                        <p>Dove</p>
+                    </div>
+                    <div class="info-box-2">
+                        <b><p>Tên sản phẩm:</p></b>
+                        <p>Dầu Gội Dove Nhật Bơ & Dầu Argan Giúp Phục Hồi Tóc Hư Tổn 500G</p>
+                        <b><p>Công dụng: Dưỡng tóc</p></b>
+                    </div>
+                    <div class="info-box-3">
+                        <button type="button" style="width: 60%;height: 30px; margin: 105px 34px;">1</button>
+                    </div>
+                    <div class="info-box-4">
+                        <a href="updateProduct.html"><button type="button"  style="width: 60%;height: 30px; margin: 105px 34px;">19.99$</button></a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box-1">
+                      <img src="../IMAGES/body1.jpg">
+                    </div>
+                    <div class="info-box-1"> 
+                        <p>Dove</p>
+                    </div>
+                    <div class="info-box-2">
+                        <b><p>Tên sản phẩm:</p></b>
+                        <p>Tẩy Da Chết Toàn Thân Dove Exfoliating Body Polish</p>
+                        <b><p>Công dụng: Làm sạch da</p></b>
+                    </div>
+                    <div class="info-box-3">
+                        <button type="button" style="width: 60%;height: 30px; margin: 105px 34px;">1</button>
+                    </div>
+                    <div class="info-box-4">
+                        <a href="updateProduct.html"><button type="button"  style="width: 60%;height: 30px; margin: 105px 34px;">19.99$</button></a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box-1">
+                      <img src="../IMAGES/body5.jpg">
+                    </div>
+                    <div class="info-box-1"> 
+                        <p>Dove</p>
+                    </div>
+                    <div class="info-box-2">
+                        <b><p>Tên sản phẩm:</p></b>
+                        <p>Sữa tắm dưỡng thể Dove Da mịn thơm mát 500g</p>
+                        <b><p>Công dụng: Làm sạch da</p></b>
+                    </div>
+                    <div class="info-box-3">
+                        <button type="button" style="width: 60%;height: 30px; margin: 105px 34px;">1</button>
+                    </div>
+                    <div class="info-box-4">
+                        <a href="updateProduct.html"><button type="button"  style="width: 60%;height: 30px; margin: 105px 34px;">19.99$</button></a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box-2" align="center" style="background-color: #f1f1f1;">
+                        <p><b>TỔNG GIÁ TRỊ</b></p>
+                    </div>
+                    <div style="width: 80%; margin-top: 2%; font-size: 25px;" align="center">
+                        <p><b>59.97$</b></p>
+                    </div>
+                    
+                </div>
+                
+           
+        </div>
+            
     </section>
     <div id="footer" style="margin-top: 50%;">
         <div class="footer-box">
