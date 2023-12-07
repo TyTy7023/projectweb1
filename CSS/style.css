@@ -72,6 +72,12 @@ margin-left: 50%;
     font-size: 30px;
     display: flex;
 }
+.item submit{
+    width: 15%;
+}
+.find{
+    
+}
 #item .item-box {
     width: 30%;
     font-size: 120%;

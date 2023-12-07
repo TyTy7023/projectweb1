@@ -45,7 +45,7 @@
 }
 .button
 {
-    background-color: #f1f1f1;
+    background-color: #fcfbfb;
     margin: 2% 5%;
     text-align: center;
     width: 90%;
@@ -53,7 +53,7 @@
 }
 .button:hover
 {
-    background-color: rgb(251, 189, 189);
+    background-color: rgb(233, 229, 229);
     margin: 2% 5%;
     cursor: pointer;
 }
@@ -107,7 +107,7 @@
 }
 #main-menu li a:hover /*change text color when you point*/
 {
-    color: rgb(225, 96, 21);
+    color: rgb(116, 115, 114);
 }
 #main-menu li:hover ul.sub-menu /*to appears submenu*/
 {

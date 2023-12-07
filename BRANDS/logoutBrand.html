@@ -16,7 +16,7 @@
                 const loginSuccess = urlParams.get('loginSuccess');
     
                 if (loginSuccess === 'true') {
-                    alert('You have successfully logged in and can now make purchases!');
+                    alert('Bạn đã đăng nhập thành công và có thể mua hàng!');
                 }
             });
         </script>
@@ -33,10 +33,12 @@
                      
                         <input type="text" placeholder="  Search..." id="search-text"> 
                      <div class="item submit">
-                        <button onclick="searchProducts()" type="submit" id="search-icon">
+                     <a href="../INDEX.html"><button  type="submit" id="search-icon">
                             <i class='bx bx-search'></i>
-                        </button> 
+                        </button>
+                    </a> 
                     </div>
+                
                     </form>
                 </div>
                 <!--insert item-->
@@ -108,7 +110,7 @@
             </div>
         <!--menu in index-->
             <ul id="main-menu">
-                <li><a href=""><h2>SKIN1004</h2></a></li>
+                <li><a href="../../BRANDS/SKIN1004/ALL.html"><h2>SKIN1004</h2></a></li>
                 <li><a href=""> <h2>Paula's Choice</h2></a></li>
                 <li><a href=""><h2>Unove</h2></a></li>
                 <li><a href=""><h2>Dove</h2></a></li>
@@ -161,6 +163,7 @@
                   <label for="maxPrice"><h2>Giá tối đa:</h2></label>
                   <input type="number" id="maxPrice" placeholder="giá tối đa" min="1" max="2000000">
                 </li>
+                <button class="find">Tìm kiếm</button>
               </ul>
               
 
