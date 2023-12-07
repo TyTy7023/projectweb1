@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/styleadmin.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+        <title>COCONUT-ADMIM</title>
+        <script>  
+            function sure(){  
+              var result = confirm("Bạn có chắc chắn không?");  
+              if(result){
+                alert("Thêm thành công!")
+              }
+              else{
+                alert("Đã hủy bỏ thay đổi")
+              }
+            }
+          </script>
+    </head>
+    <body>
+        <div style="position: fixed; z-index: 10; width: 100%; ">
+            <!--heading of index-->
+                    <div id="heading">
+                        <!--insert logo-->
+                        <div class="heading-box-L" align="center">
+                            <img src="../IMAGES/logo.png" alt="COCONUT-cosmetics " width="60%">
+                        </div>
+                        <!--insert search box-->
+                        <div class="heading-box-C">
+                            <h1>CHÀO MỪNG ĐẾN VỚI TRANG ADMIN</h1>
+                        </div>
+                        <!--insert item-->
+                        <div class="heading-box-R" align="center" id="item">
+                            
+                            <div class="item-box" align="center">
+                                <a href="">
+                                    <i class='bx bxs-user-circle'style="margin-right: 10px; font-size: 60px;" ></i>
+                                    <p style="font-size: medium; margin-right: 10px;"> logout<p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- item to top of page
+                    <div >
+                        <a href="INDEX.html " style="color: black;"id="item-home">
+                            <img src="IMAGES/top.png" alt="top" width="100px" height="100px">
+                        </a>
+                    </div> -->
+                <!--menu in index-->
+                    <ul id="main-menu">
+                        <li><a href="thongke.html"><h2>Thống Kê</h2></a></li>
+                        <li><a href="qlsp.html"><h2>Quản Lý Sản Phẩm</h2></a></li>
+                        <li><a href="qlnd.html"><h2>Quản Lý Người Dùng</h2></a></li>
+                        <li><a href="qldh.html"><h2>Quản Lý Đơn Hàng</h2></a></li>  
+                    </ul>
+                </div>
+
+        <form id="body">
+            <table style="width: 100%;">
+                <tr>
+                    <td><p style="font-size: 30px;">Tên sản phẩm</p ></td>
+                    <td><input type="text" name="name" style="width: 60%;"></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size: 30px;">Giá sản phẩm</p></td>
+                    <td><input type="text" name="price" style="width: 60%;"></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size: 30px;">
+                    </p></td>
+                    <td><input type="text" name="type" style="width: 60%;"></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size: 30px;">Ảnh sản phẩm</p></td>
+                    <td><input type="file" name="image" style="width: 60%;"></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size: 30px;">Mô tả sản phẩm</p></td>
+                    <td><textarea name="description" cols="30" rows="10" style="width: 60%;"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" onclick="sure()" style="width: 20%; height: 50px;">thêm sản phẩm</button></td>
+                </tr>
+            </table>
+        </form>
+        <div id="footer">
+            <div class="footer-box">
+                <img src="../IMAGES/logo.png" alt="COCONUT-cosmetics " width="100%">
+            </div>
+            <div class="footer-box" style="width: 51%;">
+                <h3 style="margin-left: 12.7%; margin-bottom: 5px;">COCONUT STORES</h3>
+                <ul class="information">
+                    <li><h5>HÀ NỘI CAPITAL</h5>
+                        <ul>
+                            <li>16/03 Lê Hồng Phong street, Điện Biên Phủ ward, Ba Đình district , Hà Nội capital</li>
+                            <li>10 Lý Quốc Sư street, hàng Trống ward, Hoàn Kiếm district, Hà Nội</li>
+                        </ul>
+                    </li>
+                    <li><h5>HỒ CHÍ MINH CITY</h5>
+                        <ul>
+                            <li>835/12 Trần Hưng Đạo street, ward 5, quận 5, Hồ Chí Minh city</li>
+                            <li>766 Võ Văn Kiệt street, ward 1, district 5, Hồ Chí Minh city</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-box" style="margin-top: 17px;" >
+                <ul style="list-style: none;">
+                    <li><div class="info-contact"><i class='bx bxl-instagram' ></i><p>coconut_Cosmetic</p></div></li>
+                    <li><div class="info-contact"><i class='bx bxl-facebook-circle' ></i><p>CoconutCosmetic</p></div></li>
+                    <li><div class="info-contact"><i class='bx bxs-phone-call' ></i><p>1900.7007</p></div></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
