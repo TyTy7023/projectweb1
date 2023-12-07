@@ -18,6 +18,15 @@
                 alert("Đã hủy bỏ thay đổi")
               }
             }
+            function deleted(){  
+              var result = confirm("Bạn có chắc chắn không?");  
+              if(result){
+                alert("xoá ảnh thành công!")
+              }
+              else{
+                alert("Đã hủy bỏ thay đổi")
+              }
+            }
           </script>
     </head>
     <body>
@@ -30,13 +39,13 @@
                         </div>
                         <!--insert search box-->
                         <div class="heading-box-C">
-                            <h1>CHÀO MỪNG ĐẾN VỚI TRANG ADMIN</h1>
+                            <h1>CHÀO MỪNG ĐẾN VỚI TRANG ADMIN MR.THANH</h1>
                         </div>
                         <!--insert item-->
                         <div class="heading-box-R" align="center" id="item">
                             
                             <div class="item-box" align="center">
-                                <a href="">
+                                <a href="../INDEX.html">
                                     <i class='bx bxs-user-circle'style="margin-right: 10px; font-size: 60px;" ></i>
                                     <p style="font-size: medium; margin-right: 10px;"> logout<p>
                                 </a>
@@ -63,16 +72,16 @@
             <table style="width: 100%;">
                 <tr>
                     <td><p style="font-size: 30px;">Tên sản phẩm</p ></td>
-                    <td><input type="text" name="name" style="width: 60%;"></td>
+                    <td><input type="text" placeholder="Toner skin1004" name="name" style="width: 60%;"></td>
                 </tr>
                 <tr>
                     <td><p style="font-size: 30px;">Giá sản phẩm</p></td>
-                    <td><input type="text" name="price" style="width: 60%;"></td>
+                    <td><input type="text" placeholder="45$" name="price" style="width: 60%;"></td>
                 </tr>
                 <tr>
                     <td><p style="font-size: 30px;">Ảnh sản phẩm</p></td>
                     <td><input type="file" name="image"  style="width: 60%;"></td>
-                    <td><button style="margin-left: auto;">Xóa</button></td>
+                    <td><button style="margin-left: -350px; width: 100px;" onclick="deleted()">Xóa</button></td>
                 </tr>
                 <tr>
                     <td><p style="font-size: 30px;">Mô tả sản phẩm</p></td>

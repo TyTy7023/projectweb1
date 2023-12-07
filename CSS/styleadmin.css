@@ -256,6 +256,9 @@
     border-bottom: 1px solid #cfcccc;
     border-top: 1px solid #cfcccc;
 }
+#body .frame p{
+    font-size: 25px;
+}
 #body .frame .frame-box
 {
     margin: 0.5%;
