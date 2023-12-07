@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../CSS/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>BRANDS</title>
+    </head>
+    <body>
+        <div style="position: fixed; z-index: 10; width: 100%; ">
+    <!--heading of index-->
+            <div id="heading">
+                <!--insert logo-->
+                <div class="heading-box-L" align="center">
+                    <img src="../../IMAGES/logo.png" alt="COCONUT-cosmetics " width="60%">
+                </div>
+                <!--insert search box-->
+                <div class="heading-box-C">
+                    <form id="search-box"> 
+                        <input type="text" placeholder="  Search..." id="search-text"> 
+                        <button type="submit" id="search-icon">
+                            <i class='bx bx-search'></i>
+                        </button> 
+                    </form>
+                </div>
+                <!--insert item-->
+                <div class="heading-box-R" align="center" id="item">
+                    <div class="item-box" align="center">
+                       
+                        <p style="font-size: 35px;"> 
+                             <i  class='bx bxs-shopping-bags'></i> 
+                            <p style="font-size: small;">giỏ hàng</p>
+                            </p>
+                        
+                    
+                </div>
+                
+                <div class="item-box" align="center">
+                    <a href="">
+                        <i class='bx bxs-user-circle'></i>
+                        <p style="font-size: small;">Sen Kim</p>
+                        <!-- Menu structure -->
+                        <div class="menu">
+                            <ul>
+                               <a href="../index.html"> <li>đăng xuất</li></a>
+                                <li><a href="../Orderhistory.html">Lịch Sử đơn hàng</a></li>
+                                <li><a href="../AccountInfo.html">Thông tin tài khoản</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                
+                    <script>
+    var isLoggedIn = false;
+
+    function toggleLogin() {
+        if (isLoggedIn) {
+            // Thực hiện các bước đăng xuất ở đây (nếu cần)
+            alert('Bạn đã đăng xuất.');
+
+            // Thay đổi trạng thái và nội dung khi đăng xuất
+            document.getElementById('loginButton').innerHTML = 
+                '<a href="#" onclick="toggleLogin()">' +
+                    '<i class="bx bxs-user-circle"></i>' +
+                    '<p style="font-size: small;">Login</p>' +
+                '</a>';
+            
+            isLoggedIn = false;
+        } else {
+            // Thực hiện các bước đăng nhập ở đây (nếu cần)
+            alert('Bạn đã đăng nhập.');
+
+            // Thay đổi trạng thái và nội dung khi đăng nhập
+            document.getElementById('loginButton').innerHTML = 
+                '<a href="#" onclick="toggleLogin()">' +
+                    '<i class="bx bxs-user-circle"></i>' +
+                    '<p style="font-size: small;">Logout</p>' +
+                '</a>';
+            
+            isLoggedIn = true;
+        }
+    }
+</script>
+                   
+                </div>
+            </div>
+        <!--item to top of page-->
+            <div >
+                <a href="main.html" style="color: black;"id="item-home"> <!--link to top of index-->
+                    <img src="../../IMAGES/top.png" alt="top" width="100px" height="100px">
+                </a>
+            </div>
+        <!--menu in index-->
+            <ul id="main-menu">
+                
+                <li><a href="../../INDEX.html"><h2>BRANDS</h2></a>
+                </li>
+                <li><a href="../Paula's Choice/ALL.html"><h2>Paula's Choice</h2></a>
+                </li>
+                <li><a href="../Dove/ALL.html"><h2>DOVE</h2></a>
+                </li>
+                <li><a href="../SKIN1004/ALL.html"><h2>SKIN 1004</h2></a>
+                </li>
+            </ul>
+        </div>
+        <div style="padding-top: 120px;">
+            <div id="advertisement" >
+                <div id="slide" >
+                    <div class="picture" style="background-image: url(../../IMAGES/Img4.png);"></div>
+                    <div class="picture" style="background-image: url(../../IMAGES/Img2.jpg);"></div>
+                    <div class="picture" style="background-image: url(../../IMAGES/Img1.jpg);"></div>
+    <!--NÚT Ở ĐÂY NHA-->                <!--
+                    <div class="buttons">
+                        <i class='bx bxs-chevron-left' style="font-size: 30px"></i>
+                        <i class='bx bxs-chevron-right' style="font-size: 30px"></i>
+                    </div>
+                    -->
+                </div>  
+
+            </div>
+        </div>
+            <div id="wrapper">
+                <div id="body">
+                    <div id="body-title">
+                        <h1>UNOVE</h1>
+                    </div>
+                        <div class="list">
+                            <div class="item"><a href="../../PRODUCT/product7.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/hair1.jpg" alt="Product 1">
+                                <div class="heart"></div>
+                                <p style="margin-top: 10px;">Unove Deep damage treatment EX</p>
+                                <p style="font-size: 15px;"><del>22.00 $</del></p>
+                                <p><span>10.99 </span>$</p>
+                                <div>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half' ></i>
+                                    <p style="font-size: medium; color: darkgray;">(469)</p>
+                                </div>
+                            </a></div> 
+                            <div class="item"><a href="../../PRODUCT/product9.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/hair3.jpg" alt="Product 1">
+                                <div class="heart"></div>
+                                <p style="margin-top: 10px;">Unove Deep damage Repair shampoo</p>
+                                <p style="font-size: 15px;"><del>22.00 $</del></p>
+                                <p><span>10.99 </span>$</p>
+                                <div>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half' ></i>
+                                    <p style="font-size: medium; color: darkgray;">(469)</p>
+                                </div>
+                            </a></div>
+                            <div class="item"><a href="../../PRODUCT/product3.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/hair3.webp" alt="Product 1">
+                                <div class="heart"></div>
+                                <p style="margin-top: 10px;">Unove silk oil essence</p>
+                                <p style="font-size: 15px;"><del>22.00 $</del></p>
+                                <p><span>10.99 </span>$</p>
+                                <div>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half' ></i>
+                                    <p style="font-size: medium; color: darkgray;">(469)</p>
+                                </div>
+                            </a></div>
+                            <div class="item"><a href="../../PRODUCT/product8.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/hair4.jpg" alt="Product 1">
+                                <div class="heart"></div>
+                                <p style="margin-top: 10px;">Unove No-wash water Ampoule treatment</p>
+                                <p style="font-size: 15px;"><del>22.00 $</del></p>
+                                <p><span>10.99 </span>$</p>
+                                <div>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half' ></i>
+                                    <p style="font-size: medium; color: darkgray;">(469)</p>
+                                </div>
+                            </a></div> 
+                             
+ 
+                        </div>
+                        <ul class="listPage">
+                            <li class="active">1</li>
+                            <li>2</li>
+                            <li>3</li> 
+                          </ul>
+                       
+                    </div>
+                    
+            </div>
+        <div id="footer">
+            <div class="footer-box">
+                <img src="../IMAGES/logo.png" alt="COCONUT-cosmetics " width="100%">
+            </div>
+            <div class="footer-box" style="width: 51%;">
+                <h3 style="margin-left: 12.7%; margin-bottom: 5px;">COCONUT STORES</h3>
+                <ul class="information">
+                    <li><h5>HÀ NỘI</h5>
+                        <ul>
+                            <li>16/03 Lê Hồng Phong, Phường Điện Biên Phủ, Quận Ba Đình, Hà Nội</li>
+                            <li>10 Lý Quốc Sư, Phường Hàng Trống, Quận Hoàn Kiếm, Hà Nội</li>
+                        </ul>
+                    </li>
+                    <li><h5>HỒ CHÍ MINH</h5>
+                        <ul>
+                            <li>835/12 Trần Hưng Đạo, Phường 5, Quận 5, Hồ Chí Minh</li>
+                            <li>766 Võ Văn Kiệt, Phường 1, Quận 5, Hồ Chí Minh</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-box" style="margin-top: 17px;" >
+                <ul style="list-style: none;">
+                    <li><div class="info-contact"><i class='bx bxl-instagram' ></i><p>coconut_Cosmetic</p></div></li>
+                    <li><div class="info-contact"><i class='bx bxl-facebook-circle' ></i><p>CoconutCosmetic</p></div></li>
+                    <li><div class="info-contact"><i class='bx bxs-phone-call' ></i><p>1900.7007</p></div></li>
+                </ul>
+            </div>
+        </div>  
+    </body>
+</html>
