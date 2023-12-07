@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/stylebody.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>COCONUT-INDEX</title>
+    </head>
+    <body>
+        <div style="position: fixed; z-index: 10; width: 100%; ">
+    <!--heading of index-->
+            <div id="heading">
+                <!--insert logo-->
+                <div class="heading-box-L" align="center">
+                    <img src="IMAGES/logo.png" alt="COCONUT-cosmetics " width="60%">
+                </div>
+                <!--insert search box-->
+                <div class="heading-box-C">
+                    <form class="filter"> 
+                     
+                        <input type="text" placeholder="  Search..." id="search-text"> 
+                     <div class="item submit">
+                        <button onclick="searchProducts()" type="submit" id="search-icon">
+                            <i class='bx bx-search'></i>
+                        </button> 
+                    </div>
+                    </form>
+                </div>
+                
+                <!--insert item-->
+                <div class="heading-box-R" align="center" id="item">
+                    <div class="item-box" align="center">
+                       
+                        <p style="font-size: 35px;"> 
+                             <i  class='bx bxs-shopping-bags'></i> 
+                            <p style="font-size: small;">giỏ hàng</p>
+                            </p>
+                        
+                    
+                </div>
+                
+                <div class="item-box" align="center">
+                    <a href="">
+                        <i class='bx bxs-user-circle'></i>
+                        <p style="font-size: small;">Sen Kim</p>
+                        <!-- Menu structure -->
+                        <div class="menu">
+                            <ul>
+                               <a href="../../INDEX.html"> <li>đăng xuất</li></a>
+                                <li><a href="../../Orderhistory.html">Lịch Sử đơn hàng</a></li>
+                                <li><a href="../../AccountInfo.html">Thông tin tài khoản</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                
+                    <script>
+    var isLoggedIn = false;
+
+    function toggleLogin() {
+        if (isLoggedIn) {
+            // Thực hiện các bước đăng xuất ở đây (nếu cần)
+            alert('Bạn đã đăng xuất.');
+
+            // Thay đổi trạng thái và nội dung khi đăng xuất
+            document.getElementById('loginButton').innerHTML = 
+                '<a href="#" onclick="toggleLogin()">' +
+                    '<i class="bx bxs-user-circle"></i>' +
+                    '<p style="font-size: small;">Login</p>' +
+                '</a>';
+            
+            isLoggedIn = false;
+        } else {
+            // Thực hiện các bước đăng nhập ở đây (nếu cần)
+            alert('Bạn đã đăng nhập.');
+
+            // Thay đổi trạng thái và nội dung khi đăng nhập
+            document.getElementById('loginButton').innerHTML = 
+                '<a href="#" onclick="toggleLogin()">' +
+                    '<i class="bx bxs-user-circle"></i>' +
+                    '<p style="font-size: small;">Logout</p>' +
+                '</a>';
+            
+            isLoggedIn = true;
+        }
+    }
+</script>
+                   
+                </div>
+            </div>
+        <!--item to top of page-->
+            <div >
+                <a href="INDEX.html " style="color: black;"id="item-home"> <!--link to top of index-->
+                    <img src="IMAGES/top.png" alt="top" width="100px" height="100px">
+                </a>
+            </div>
+        <!--menu in index-->
+        <ul id="main-menu">
+            <li><a href="../BRANDS/SKIN1004/logged.html"><h2>SKIN1004</h2></a></li>
+            <li><a href="../BRANDS/Paula's Choice/logged.html"> <h2>Paula's Choice</h2></a></li>
+            <li><a href="../BRANDS/Unove/logged.html"><h2>Unove</h2></a></li>
+            <li><a href="../BRANDS/Dove/logged.html"><h2>Dove</h2></a></li>
+        </ul>
+        </div>
+    <!--design advertisement-->
+    <div style="padding-top: 120px;">
+        <div id="advertisement" >
+            <div id="slide" >
+               <div class="picture" style="background-image: url(IMAGES/Img4.png);"></div>
+               <div class="picture" style="background-image: url(IMAGES/Img2.jpg);"></div>
+                <div class="picture" style="background-image: url(IMAGES/Img1.jpg);"></div>
+<!--NÚT Ở ĐÂY NHA-->                <!--
+                <div class="buttons">
+                    <i class='bx bxs-chevron-left' style="font-size: 30px"></i>
+                    <i class='bx bxs-chevron-right' style="font-size: 30px"></i>
+                </div>
+                -->
+            </div>  
+        </div>
+    </div>
+    <!--design body of page-->
+    <div id="body">
+        
+        <div class="title-body">
+            <img src="IMAGES/deal.jpg" alt="deal" width="100%">
+            <h1>Tìm thấy 0 sản phẩm</h1>
+        </div>
+       
+            
+            
+                <ul class="listPage">
+                  <li class="active">1</li>
+                  <li>2</li>
+                  <li>3</li> 
+                </ul>
+            
+            
+        </div>
+        <section class="cart">
+            <i class='bx bx-x'></i>
+            <h2>Giỏ hàng</h2>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Đã chọn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <!--  <tr>
+                        <td style="display: flex;align-items: center;"> <img style=" width: 150px;" src="IMAGES/body4.jpg"> Skin Revealing Body Lotion </td>
+                        <td><p style="font-size: 15px;"><span>$10.99</span></p></td>
+                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">Xóa </td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex;align-items: center;"> <img style=" width: 150px;" src="IMAGES/body1.jpg"> Skin Revealing Body Lotion </td>
+                        <td><p style="font-size: 15px;"><span>$10.99</span></p></td>
+                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">Xóa </td>
+                    </tr> -->
+                    </tbody>
+                </table>
+                <div style="text-align: right;" class="price-total">
+                    <p style="font-weight: bold;">Tổng thanh toán: <span> 0  </span>$</p>
+                </div>
+                <button>Mua</button>
+            </form>
+        </section>
+    <!--design information of page-->
+        
+    <!--finish decor index-->
+    
+    
+    <div id="footer">
+        <div class="footer-box">
+            <img src="IMAGES/logo.png" alt="COCONUT-cosmetics " width="100%">
+        </div>
+        <div class="footer-box" style="width: 51%;">
+            <h3 style="margin-left: 12.7%; margin-bottom: 5px;">CHI NHÁNH COCONUT</h3>
+            <ul class="information">
+                <li><h5>HÀ NỘI</h5>
+                    <ul>
+                        <li>16/03 Lê Hồng Phong, Phường Điện Biên Phủ, Quận Ba Đình, Hà Nội</li>
+                        <li>10 Lý Quốc Sư, Phố Hàng Trống, Quận Hoàn Kiếm, Hà Nội</li>
+                    </ul>
+                </li>
+                <li><h5>HỒ CHÍ MINH</h5>
+                    <ul>
+                        <li>835/12 Trần Hưng Đạo, Phường 5, Quận 5, Tp.Hồ Chí Minh</li>
+                        <li>766 Võ Văn Kiệt, Phường 1, Quận 5, Tp.Hồ Chí Minh</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-box" style="margin-top: 17px;" >
+            <ul style="list-style: none;">
+                <li><div class="info-contact"><i class='bx bxl-instagram' ></i><p>coconut_Cosmetic</p></div></li>
+                <li><div class="info-contact"><i class='bx bxl-facebook-circle' ></i><p>CoconutCosmetic</p></div></li>
+                <li><div class="info-contact"><i class='bx bxs-phone-call' ></i><p>1900.7007</p></div></li>
+            </ul>
+        </div>
+    </div>
+    </body>
+</html>
