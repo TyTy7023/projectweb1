@@ -16,7 +16,7 @@
                 const loginSuccess = urlParams.get('loginSuccess');
     
                 if (loginSuccess === 'true') {
-                    alert('You have successfully logged in and can now make purchases!');
+                    alert('Bạn đã đăng nhập thành công và có thể mua hàng!');
                 }
             });
         </script>
@@ -33,10 +33,12 @@
                      
                         <input type="text" placeholder="  Search..." id="search-text"> 
                      <div class="item submit">
-                        <button onclick="searchProducts()" type="submit" id="search-icon">
+                     <a href="../INDEX.html"><button  type="submit" id="search-icon">
                             <i class='bx bx-search'></i>
-                        </button> 
+                        </button>
+                    </a> 
                     </div>
+                
                     </form>
                 </div>
                 <!--insert item-->
@@ -58,7 +60,7 @@
                         <!-- Menu structure -->
                         <div class="menu">
                             <ul>
-                               <a href="../ITEMS/signup.html"> <li>đăng xuất</li></a>
+                               <a href="index.html"> <li>đăng xuất</li></a>
                                 <li><a href="../Orderhistory.html">Lịch Sử đơn hàng</a></li>
                                 <li><a href="../AccountInfo.html">Thông tin tài khoản</a></li>
                             </ul>
@@ -108,24 +110,10 @@
             </div>
         <!--menu in index-->
             <ul id="main-menu">
-                
-                <li><label for="category"><h2>Danh mục:</h2></label>
-                    <select id="category">
-                      <option value="">Tất cả danh mục</option>
-                      <option value="shampoo">SKIN1004</option>
-                      <option value="essence">Paula's Choice</option>
-                      <option value="essence">Unove</option>
-                      <option value="essence">Dove</option>
-                      <!-- Thêm các danh mục khác nếu cần -->
-                    </select>
-                </li>
-                   <li> <label for="minPrice"><h2>Giá tối thiểu:</h2></label>
-                    <input type="number" id="minPrice" placeholder="Nhập giá tối thiểu">
-                   </li>
-                  <li>  <label for="maxPrice"><h2>Giá tối đa:</h2></label>
-                    <input type="number" id="maxPrice" placeholder="Nhập giá tối đa"></li>
-              
-               
+                <li><a href="../../BRANDS/SKIN1004/ALL.html"><h2>SKIN1004</h2></a></li>
+                <li><a href=""> <h2>Paula's Choice</h2></a></li>
+                <li><a href=""><h2>Unove</h2></a></li>
+                <li><a href=""><h2>Dove</h2></a></li>
             </ul>
         </div>
         <!--design advertisement-->
@@ -148,18 +136,36 @@
         <!--design body of page-->
         <div id="wrapper">
         
-           <ul id="sidebar">
-         
-          <li> <a href=""><h1>MENU</h1></a>
-            
-            <li><a href="../BRANDS/SKIN1004/ALL.html">Skin 1004</a></li>
-            <li><a href="../BRANDS/Paula's Choice/ALL.html">Torriden</a></li>
-            <li><a href="../BRANDS/Unove/ALL.html">Unove</a></li>
-            
-            <li><a href="../BRANDS/Dove/ALL.html">Dove</a></li>
-        </li>
-       
-    </ul>
+            <ul id="sidebar">
+                <li>
+                  <a href="#"><h1>MENU</h1></a>
+                </li>
+                <li>
+                  <h2>Tìm theo tên</h2>
+                  <input type="text" placeholder="nhập tên">
+                </li>
+                <li>
+                  <label for="category"><h2>Danh mục:</h2></label>
+                  <select id="category">
+                    <option value="">Tất cả danh mục</option>
+                    <option value="shampoo">SKIN1004</option>
+                    <option value="essence">Paula's Choice</option>
+                    <option value="essence">Unove</option>
+                    <option value="essence">Dove</option>
+                    <!-- Thêm các danh mục khác nếu cần -->
+                  </select>
+                </li>
+                <li>
+                  <label for="minPrice"><h2>Giá tối thiểu:</h2></label>
+                  <input type="number" id="minPrice" placeholder="giá tối thiểu" min="1" max="1000000">
+                </li>
+                <li>
+                  <label for="maxPrice"><h2>Giá tối đa:</h2></label>
+                  <input type="number" id="maxPrice" placeholder="giá tối đa" min="1" max="2000000">
+                </li>
+                <button class="find">Tìm kiếm</button>
+              </ul>
+              
 
             <div id="body">
             <div id="body-title">
