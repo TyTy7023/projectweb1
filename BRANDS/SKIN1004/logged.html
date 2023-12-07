@@ -27,34 +27,84 @@
                 </div>
                 <!--insert item-->
                 <div class="heading-box-R" align="center" id="item">
-                   
                     <div class="item-box" align="center">
-                        <a href="../../ITEMS/signup.html">
-                            <i class='bx bxs-user-circle' ></i>
-                            <p style="font-size: small;">đăng kí<p>
-                        </a>
-                    </div>
+                       
+                        <p style="font-size: 35px;"> 
+                             <i  class='bx bxs-shopping-bags'></i> 
+                            <p style="font-size: small;">giỏ hàng</p>
+                            </p>
+                        
                     
+                </div>
+                
+                <div class="item-box" align="center">
+                    <a href="">
+                        <i class='bx bxs-user-circle'></i>
+                        <p style="font-size: small;">Sen Kim</p>
+                        <!-- Menu structure -->
+                        <div class="menu">
+                            <ul>
+                               <a href="../index.html"> <li>đăng xuất</li></a>
+                                <li><a href="../Orderhistory.html">Lịch Sử đơn hàng</a></li>
+                                <li><a href="../AccountInfo.html">Thông tin tài khoản</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                
+                    <script>
+    var isLoggedIn = false;
+
+    function toggleLogin() {
+        if (isLoggedIn) {
+            // Thực hiện các bước đăng xuất ở đây (nếu cần)
+            alert('Bạn đã đăng xuất.');
+
+            // Thay đổi trạng thái và nội dung khi đăng xuất
+            document.getElementById('loginButton').innerHTML = 
+                '<a href="#" onclick="toggleLogin()">' +
+                    '<i class="bx bxs-user-circle"></i>' +
+                    '<p style="font-size: small;">Login</p>' +
+                '</a>';
+            
+            isLoggedIn = false;
+        } else {
+            // Thực hiện các bước đăng nhập ở đây (nếu cần)
+            alert('Bạn đã đăng nhập.');
+
+            // Thay đổi trạng thái và nội dung khi đăng nhập
+            document.getElementById('loginButton').innerHTML = 
+                '<a href="#" onclick="toggleLogin()">' +
+                    '<i class="bx bxs-user-circle"></i>' +
+                    '<p style="font-size: small;">Logout</p>' +
+                '</a>';
+            
+            isLoggedIn = true;
+        }
+    }
+</script>
+                   
                 </div>
             </div>
         <!--item to top of page-->
             <div >
-                <a href="main.html" style="color: black;"id="item-home"> <!--link to top of index-->
+                <a href="INDEX.html" style="color: black;"id="item-home"> <!--link to top of index-->
                     <img src="../../IMAGES/top.png" alt="top" width="100px" height="100px">
                 </a>
             </div>
         <!--menu in index-->
-            <ul id="main-menu">
+        <ul id="main-menu">
                 
-                <li><a href="../../INDEX.html"><h2>BRANDS</h2></a>
+            <li><a href="../../INDEX.html"><h2>BRANDS</h2></a>
                 </li>
-                <li><a href="../Paula's Choice/ALL.html"><h2>Paula's Choice</h2></a>
+            <li><a href="../Paula's Choice/ALL.html"><h2>Paula's Choice</h2></a>
                 </li>
-                <li><a href="../Dove/ALL.html"><h2>DOVE</h2></a>
+            <li><a href="../Unove/ALL.html"><h2>UNOVE</h2></a>
+                
                 </li>
-                <li><a href="../SKIN1004/ALL.html"><h2>SKIN 1004</h2></a>
+            <li><a href="../Dove/ALL.html"><h2>DOVE</h2></a>
                 </li>
-            </ul>
+        </ul>
         </div>
         <div style="padding-top: 120px;">
             <div id="advertisement" >
@@ -75,78 +125,91 @@
             <div id="wrapper">
                 <div id="body">
                     <div id="body-title">
-                        <h1>UNOVE</h1>
+                        <h1>SKIN 1004</h1>
                     </div>
                         <div class="list">
-                            <div class="item"><a href="../../PRODUCT/product7.html" style="text-decoration: none; color: black;">
-                                <img src="../../IMAGES/hair1.jpg" alt="Product 1">
+                            <div class="item"><a href="../../PRODUCT/product1.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/face2.jpg" alt="Product 1">
                                 <div class="heart"></div>
-                                <p style="margin-top: 10px;">Unove Deep damage treatment EX</p>
-                                <p style="font-size: 15px;"><del>22.00 $</del></p>
-                                <p><span>10.99 </span>$</p>
+                                <p style="margin-top: 10px;">Skin 1004 Hyalu Toner</p>
+                                <p style="font-size: 15px;"><del>$22.00</del></p>
+                                <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
                                 <div>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star-half' ></i>
-                                    <p style="font-size: medium; color: darkgray;">(469)</p>
-                                </div>
-                            </a></div> 
-                            <div class="item"><a href="../../PRODUCT/product9.html" style="text-decoration: none; color: black;">
-                                <img src="../../IMAGES/hair3.jpg" alt="Product 1">
-                                <div class="heart"></div>
-                                <p style="margin-top: 10px;">Unove Deep damage Repair shampoo</p>
-                                <p style="font-size: 15px;"><del>22.00 $</del></p>
-                                <p><span>10.99 </span>$</p>
-                                <div>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star-half' ></i>
-                                    <p style="font-size: medium; color: darkgray;">(469)</p>
+                                    <p style="font-size: medium; color: darkgray;">(449)</p>
                                 </div>
                             </a></div>
-                            <div class="item"><a href="../../PRODUCT/product3.html" style="text-decoration: none; color: black;">
-                                <img src="../../IMAGES/hair3.webp" alt="Product 1">
+                            <div class="item"><a href="../../PRODUCT/product1.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/face4.jpg" alt="Product 1">
                                 <div class="heart"></div>
-                                <p style="margin-top: 10px;">Unove silk oil essence</p>
-                                <p style="font-size: 15px;"><del>22.00 $</del></p>
-                                <p><span>10.99 </span>$</p>
+                                <p style="margin-top: 10px;">Skin 1004 Serum Centella </p>
+                                <p style="font-size: 15px;"><del>$22.00</del></p>
+                                <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
                                 <div>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star-half' ></i>
-                                    <p style="font-size: medium; color: darkgray;">(469)</p>
-                                </div>
-                            </a></div>
-                            <div class="item"><a href="../../PRODUCT/product8.html" style="text-decoration: none; color: black;">
-                                <img src="../../IMAGES/hair4.jpg" alt="Product 1">
-                                <div class="heart"></div>
-                                <p style="margin-top: 10px;">Unove No-wash water Ampoule treatment</p>
-                                <p style="font-size: 15px;"><del>22.00 $</del></p>
-                                <p><span>10.99 </span>$</p>
-                                <div>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star-half' ></i>
-                                    <p style="font-size: medium; color: darkgray;">(469)</p>
+                                    <p style="font-size: medium; color: darkgray;">(549)</p>
                                 </div>
                             </a></div> 
-                             
- 
+                            
+                            <div class="item"><a href="../../PRODUCT/product1.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/face6.jpg" alt="Product 1">
+                                <div class="heart"></div>
+                                <p style="margin-top: 10px;">Skin 1004 Hyalu Serum</p>
+                                <p style="font-size: 15px;"><del>$22.00</del></p>
+                                <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
+                                <div>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half' ></i>
+                                    <p style="font-size: medium; color: darkgray;">(463)</p>
+                                </div>
+                            </a></div> 
+                            <div class="item"><a href="../../PRODUCT/product1.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/face7.webp" alt="Product 1">
+                                <div class="heart"></div>
+                                <p style="margin-top: 10px;">Skin 1004 Centella Toner</p>
+                                <p style="font-size: 15px;"><del>$22.00</del></p>
+                                <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
+                                <div>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half' ></i>
+                                    <p style="font-size: medium; color: darkgray;">(999)</p>
+                                </div>
+                            </a></div> 
+                            <div class="item"><a href="../../PRODUCT/product1.html" style="text-decoration: none; color: black;">
+                                <img src="../../IMAGES/face8.jpg" alt="Product 1">
+                                <div class="heart"></div>
+                                <p style="margin-top: 10px;">Skin 1004 Centella Toner</p>
+                                <p style="font-size: 15px;"><del>$22.00</del></p>
+                                <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
+                                <div>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half' ></i>
+                                    <p style="font-size: medium; color: darkgray;">(999)</p>
+                                </div>
+                            </a></div> 
                         </div>
                         <ul class="listPage">
                             <li class="active">1</li>
                             <li>2</li>
                             <li>3</li> 
                           </ul>
-                       
                     </div>
                     
             </div>
@@ -178,6 +241,6 @@
                     <li><div class="info-contact"><i class='bx bxs-phone-call' ></i><p>1900.7007</p></div></li>
                 </ul>
             </div>
-        </div>  
+        </div>
     </body>
 </html>
