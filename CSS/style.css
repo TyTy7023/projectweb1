@@ -9,7 +9,7 @@ margin-left: 50%;
 #heading
 {
     width: 100%;
-    height: 70px;
+    height: 100px;
     background-color: white;
     align-items: center;
     display: flex;
@@ -228,7 +228,7 @@ margin-left: 50%;
     width: 50%;
     height: 53%;
     left: 28.5%;
-    margin-top: 2%;
+    margin-top: 3%;
     border-radius: 10px;  
 }
 #slide .picture

@@ -89,14 +89,14 @@
         <!--menu in index-->
         <ul id="main-menu">
                 
-            <li><a href="../../INDEX.html"><h2>BRANDS</h2></a>
+            <li><a href="../../INDEX00.html"><h2>BRANDS</h2></a>
                 </li>
-            <li><a href="../Paula's Choice/ALL.html"><h2>Paula's Choice</h2></a>
+            <li><a href="../Paula's Choice/logged.html"><h2>Paula's Choice</h2></a>
                 </li>
-            <li><a href="../Unove/ALL.html"><h2>UNOVE</h2></a>
+            <li><a href="../Unove/logged.html"><h2>UNOVE</h2></a>
                 
                 </li>
-            <li><a href="../Dove/ALL.html"><h2>DOVE</h2></a>
+            <li><a href="../Dove/logged.html"><h2>DOVE</h2></a>
                 </li>
         </ul>
         </div>
@@ -117,6 +117,36 @@
             </div>
         </div>
             <div id="wrapper">
+                <ul id="sidebar">
+                    <li>
+                      <a href="#"><h1>MENU</h1></a>
+                    </li>
+                    <li>
+                      <h2>Tìm theo tên</h2>
+                      <input type="text" placeholder="nhập tên">
+                    </li>
+                    <li>
+                      <label for="category"><h2>Danh mục:</h2></label>
+                      <select id="category">
+                        <option value="">Tất cả danh mục</option>
+                        <option value="shampoo">Skin1004</option>
+                        <option value="essence">Paula's Choice</option>
+                        <option value="essence">Unove</option>
+                        <option value="essence">Dove</option>
+                        <!-- Thêm các danh mục khác nếu cần -->
+                      </select>
+                    </li>
+                    <li>
+                      <label for="minPrice"><h2>Giá tối thiểu:</h2></label>
+                      <input type="number" id="minPrice" placeholder="giá tối thiểu" min="1" max="1000000">
+                    </li>
+                    <li>
+                      <label for="maxPrice"><h2>Giá tối đa:</h2></label>
+                      <input type="number" id="maxPrice" placeholder="giá tối đa" min="1" max="2000000">
+                    </li>
+                    <button class="find"><a href="foundResult.html">Tìm kiếm</a></button>
+                  </ul>
+    
                 <div id="body">
                     <div id="body-title">
                         <h1>SKIN 1004</h1>
@@ -168,41 +198,13 @@
                                     <p style="font-size: medium; color: darkgray;">(463)</p>
                                 </div>
                             </a></div> 
-                            <div class="item"><a href="../../PRODUCT/product1.html" style="text-decoration: none; color: black;">
-                                <img src="../../IMAGES/face7.webp" alt="Product 1">
-                                <div class="heart"></div>
-                                <p style="margin-top: 10px;">Skin 1004 Centella Toner</p>
-                                <p style="font-size: 15px;"><del>$22.00</del></p>
-                                <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
-                                <div>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star-half' ></i>
-                                    <p style="font-size: medium; color: darkgray;">(999)</p>
-                                </div>
-                            </a></div> 
-                            <div class="item"><a href="../../PRODUCT/product1.html" style="text-decoration: none; color: black;">
-                                <img src="../../IMAGES/face8.jpg" alt="Product 1">
-                                <div class="heart"></div>
-                                <p style="margin-top: 10px;">Skin 1004 Centella Toner</p>
-                                <p style="font-size: 15px;"><del>$22.00</del></p>
-                                <p><span style="color: brown;">50%</span>&emsp;$10.99</p>
-                                <div>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star-half' ></i>
-                                    <p style="font-size: medium; color: darkgray;">(999)</p>
-                                </div>
-                            </a></div> 
+                            
+                            
                         </div>
                         <ul class="listPage">
                             <li class="active">1</li>
-                            <li>2</li>
-                            <li>3</li> 
+                            <li><a href="logged1.html">2</a></li>
+                             
                           </ul>
                     </div>
                     

@@ -18,16 +18,18 @@
                 </div>
                 <!--insert search box-->
                 <div class="heading-box-C">
-                    <form id="search-box"> 
-                        <input type="text" placeholder="  Search..." id="search-text"> 
-                        <button type="submit" id="search-icon">
+                    <form class="filter"> 
+                        <input type="text" placeholder="  Tìm Kiếm..." id="search-text"> 
+                     <div class="item submit">
+                        <button onclick="searchProducts()" type="submit" id="search-icon">
                             <i class='bx bx-search'></i>
                         </button> 
+                    </div>
                     </form>
                 </div>
                 <!--insert item-->
                 <div class="heading-box-R" align="center" id="item">
-                   
+                    <div class="item-box"></div>
                     <div class="item-box" align="center">
                         <a href="../../ITEMS/signup.html">
                             <i class='bx bxs-user-circle' ></i>
@@ -67,6 +69,36 @@
             </div>
         </div>
             <div id="wrapper">
+                <ul id="sidebar">
+                    <li>
+                      <a href="#"><h1>MENU</h1></a>
+                    </li>
+                    <li>
+                      <h2>Tìm theo tên</h2>
+                      <input type="text" placeholder="nhập tên">
+                    </li>
+                    <li>
+                      <label for="category"><h2>Danh mục:</h2></label>
+                      <select id="category">
+                        <option value="">Tất cả danh mục</option>
+                        <option value="shampoo">Skin1004</option>
+                        <option value="essence">Paula's Choice</option>
+                        <option value="essence">Unove</option>
+                        <option value="essence">Dove</option>
+                        <!-- Thêm các danh mục khác nếu cần -->
+                      </select>
+                    </li>
+                    <li>
+                      <label for="minPrice"><h2>Giá tối thiểu:</h2></label>
+                      <input type="number" id="minPrice" placeholder="giá tối thiểu" min="1" max="1000000">
+                    </li>
+                    <li>
+                      <label for="maxPrice"><h2>Giá tối đa:</h2></label>
+                      <input type="number" id="maxPrice" placeholder="giá tối đa" min="1" max="2000000">
+                    </li>
+                    <button class="find"><a href="../../foundResult.html">Tìm kiếm</a></button>
+                  </ul>
+    
                 <div id="body">
                     <div id="body-title">
                         <h1>SKIN 1004</h1>
@@ -90,7 +122,8 @@
                             
                         </div>
                         <ul class="listPage">
-                            <li class="active">1</li>
+                            <li class="active"><a href="ALL.html">1</a></li>
+                            <li class="active">2</li>
                           </ul>
                     </div>
                     

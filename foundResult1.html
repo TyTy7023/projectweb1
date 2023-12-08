@@ -115,22 +115,47 @@
         </div>
     </div>
     <!--design body of page-->
-    <div id="body">
+    
         
-        <div class="title-body">
-            <img src="IMAGES/deal.jpg" alt="deal" width="100%">
-            <h1>Tìm thấy 0 sản phẩm</h1>
-        </div>
-       
+        <div id="body">
+        
+            <div class="title-body">
+                <img src="IMAGES/deal.jpg" alt="deal" width="100%">
+                <h1>Tìm thấy 0 sản phẩm</h1>
             
+            <div id="wrapper">
             
-                <ul class="listPage">
-                  <li class="active">1</li>
-                  <li>2</li>
-                  <li>3</li> 
-                </ul>
-            
-            
+                <ul id="sidebar">
+                    <li>
+                      <a href="#"><h1>MENU</h1></a>
+                    </li>
+                    <li>
+                      <h2>Tìm theo tên</h2>
+                      <input type="text" placeholder="nhập tên">
+                    </li>
+                    <li>
+                      <label for="category"><h2>Danh mục:</h2></label>
+                      <select id="category">
+                        <option value="">Tất cả danh mục</option>
+                        <option value="shampoo">Skin1004</option>
+                        <option value="essence">Paula's Choice</option>
+                        <option value="essence">Unove</option>
+                        <option value="essence">Dove</option>
+                        <!-- Thêm các danh mục khác nếu cần -->
+                      </select>
+                    </li>
+                    <li>
+                      <label for="minPrice"><h2>Giá tối thiểu:</h2></label>
+                      <input type="number" id="minPrice" placeholder="giá tối thiểu" min="1" max="1000000">
+                    </li>
+                    <li>
+                      <label for="maxPrice"><h2>Giá tối đa:</h2></label>
+                      <input type="number" id="maxPrice" placeholder="giá tối đa" min="1" max="2000000">
+                    </li>
+                    <button class="find"><a href="foundResult.html">Tìm kiếm</a></button>
+                  </ul>
+                </div>  
+            </div>
         </div>
         <section class="cart">
             <i class='bx bx-x'></i>
