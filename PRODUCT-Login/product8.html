@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Item8 of BIOY</title>
     </head>
@@ -28,31 +28,71 @@
                 <!--insert item-->
                 <div class="heading-box-R" align="center" id="item">
                     <div class="item-box" align="center">
-                        <a href="">
-                            <i class='bx bxs-shopping-bags'></i>
-                            <p style="font-size: small;">shopping<p>
-                        </a>
-                    </div>
-                    <div class="item-box" align="center">
-                        <a href="../ITEMS/login.html">
-                            <i class='bx bxs-user-circle' ></i>
-                            <p style="font-size: small;">login<p>
-                        </a>
-                    </div>
-                    <div class="item-box" align="center">
-                        <a href="">
-                            <i style="margin-right: 10px;"class='bx bxs-chat' ></i>
-                            <p style="font-size: small; margin-right: 10px;">chat<p>
-                        </a>
-                    </div>
+                       
+                        <p style="font-size: 35px;"> 
+                             <i  class='bx bxs-shopping-bags'>(2)</i> 
+                            <p style="font-size: small;">giỏ hàng</p>
+                            </p>
+                        
+                    
+                </div>
+                
+                <div class="item-box" align="center">
+                    <a href="">
+                        <i class='bx bxs-user-circle'></i>
+                        <p style="font-size: small;">Sen Kim</p>
+                        <!-- Menu structure -->
+                        <div class="menu">
+                            <ul>
+                               <a href="../INDEX.html"> <li>đăng xuất</li></a>
+                                <li><a href="../Orderhistory.html">Lịch Sử đơn hàng</a></li>
+                                <li><a href="../AccountInfo.html">Thông tin tài khoản</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                
+                    <script>
+    var isLoggedIn = false;
+
+    function toggleLogin() {
+        if (isLoggedIn) {
+            // Thực hiện các bước đăng xuất ở đây (nếu cần)
+            alert('Bạn đã đăng xuất.');
+
+            // Thay đổi trạng thái và nội dung khi đăng xuất
+            document.getElementById('loginButton').innerHTML = 
+                '<a href="#" onclick="toggleLogin()">' +
+                    '<i class="bx bxs-user-circle"></i>' +
+                    '<p style="font-size: small;">Login</p>' +
+                '</a>';
+            
+            isLoggedIn = false;
+        } else {
+            // Thực hiện các bước đăng nhập ở đây (nếu cần)
+            alert('Bạn đã đăng nhập.');
+
+            // Thay đổi trạng thái và nội dung khi đăng nhập
+            document.getElementById('loginButton').innerHTML = 
+                '<a href="#" onclick="toggleLogin()">' +
+                    '<i class="bx bxs-user-circle"></i>' +
+                    '<p style="font-size: small;">Logout</p>' +
+                '</a>';
+            
+            isLoggedIn = true;
+        }
+    }
+</script>
+                   
                 </div>
             </div>
         <!--menu in index-->
             <ul id="main-menu">
-                <li><a href=""><h2>Skin 1004</h2></a></li>
-                <li><a href=""><h2>Unove</h2></a></li>
-                <li><a href=""><h2>Dove</h2></a></li>
-                <li><a href=""><h2>Paula's Choic</h2></a></li>
+                <li><a href="../INDEX00.html"><h2>HOME</h2></a></li>
+                <li><a href="../BRANDS/SKIN1004/logged.html"><h2>Skin 1004</h2></a></li>
+                <li><a href="../BRANDS/Unove/logged.html"><h2>Unove</h2></a></li>
+                <li><a href="../BRANDS/Dove/logged.html"><h2>Dove</h2></a></li>
+                <li><a href="../BRANDS/Paula's Choice/logged.html"><h2>Paula's Choice</h2></a></li>
             </ul>
         </div>
             <!--Item of BIOY  -->
@@ -263,6 +303,75 @@
             </div>
             
         </div>
+        <section class="cart">
+            <i style="margin-top: 30px;" class='bx bx-x'></i>
+            <h2>Giỏ hàng</h2>
+            <form id="checkoutForm" onsubmit="handleBuy(event)" action="">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td style="display: flex;align-items: center;"> <img style=" width: 150px;" src="../IMAGES/body4.jpg"> Skin Revealing Body Lotion </td>
+                        <td><p style="font-size: 15px;"><span>$10.99</span></p></td>
+                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">Xóa </td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex;align-items: center;"> <img style=" width: 150px;" src="../IMAGES/body1.jpg"> Skin Revealing Body Lotion </td>
+                        <td><p style="font-size: 15px;"><span>$10.99</span></p></td>
+                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">Xóa </td>
+                    </tr> 
+                    </tbody>
+                </table>
+                <div class="address-section">
+                    <label for="address-select">Chọn địa chỉ:</label>
+                    <select id="address-select">
+                        <!-- Add options dynamically based on user addresses -->
+                        <option value="address1">315 Trần Hưng Đạo</option>
+                        
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <p>Hoặc nhập địa chỉ mới:</p>
+                    <textarea id="new-address" rows="4" placeholder="Nhập địa chỉ mới"></textarea>
+                </div>
+                <div style="text-align: right;" class="price-total">
+                    <p style="font-weight: bold;">Tổng số tiền: <span> 0  </span>$</p>
+                </div>
+                <button>Mua</button>
+
+            </form>
+            <script>
+                function handleBuy(event) {
+                    event.preventDefault(); // Prevents the form from submitting normally
+        
+                    // Perform any additional logic here (e.g., send data to the server)
+        
+                    // Show a success message
+                    alert('mua thành công');
+                }
+            </script>
+        </section>
+        <script>
+            const cartbtn = document.querySelector(".bx-x")
+const cartshow = document.querySelector(".bxs-shopping-bags")
+cartshow.addEventListener("click",function(){
+    console.log(cartshow)
+   document.querySelector(".cart").style.right = "0"
+})
+cartbtn.addEventListener("click",function(){
+    console.log(cartshow)
+   document.querySelector(".cart").style.right = "-100%"
+})
+        </script>
         <!--design information of page-->
         <div id="footer">
             <div class="footer-box">
