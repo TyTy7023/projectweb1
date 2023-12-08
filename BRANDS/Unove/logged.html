@@ -34,7 +34,7 @@
                        
                         <p style="font-size: 35px;"> 
                              <i  class='bx bxs-shopping-bags'></i> 
-                            <p style="font-size: small;">giỏ hàng</p>
+                            <p style="font-size: small;">Giỏ Hàng</p>
                             </p>
                         
                     
@@ -199,6 +199,76 @@
                     </div>
                     
             </div>
+            <section class="cart">
+                <i style="margin-top: 30px;" class='bx bx-x'></i>
+                <h2>Giỏ hàng</h2>
+                <form id="checkoutForm" onsubmit="handleBuy(event)" action="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td style="display: flex;align-items: center;"> <img style=" width: 150px;" src="../../IMAGES/body4.jpg"> Skin Revealing Body Lotion </td>
+                            <td><p style="font-size: 15px;"><span>$10.99</span></p></td>
+                            <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                            <td style="cursor: pointer;">Xóa</td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex;align-items: center;"> <img style=" width: 150px;" src="../../IMAGES/body1.jpg"> Skin Revealing Body Lotion </td>
+                            <td><p style="font-size: 15px;"><span>$10.99</span></p></td>
+                            <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                            <td style="cursor: pointer;">Xóa </td>
+                        </tr> 
+                        </tbody>
+                    </table>
+                    <div class="address-section">
+                        <label for="address-select">Chọn địa chỉ:</label>
+                        <select id="address-select">
+                            <!-- Add options dynamically based on user addresses -->
+                            <option value="address1">315 Trần Hưng Đạo</option>
+                            
+                            <!-- Add more options as needed -->
+                        </select>
+                        
+                        <p>Hoặc nhập địa chỉ mới:</p>
+                        <textarea id="new-address" rows="4" placeholder="Nhập địa chỉ mới"></textarea>
+                    </div>
+                    <div style="text-align: right;" class="price-total">
+                        <p style="font-weight: bold;">Tổng số tiền: <span> 0  </span>$</p>
+                    </div>
+                    <button>Mua</button>
+
+                </form>
+                <script>
+                    function handleBuy(event) {
+                        event.preventDefault(); // Prevents the form from submitting normally
+            
+                        // Perform any additional logic here (e.g., send data to the server)
+            
+                        // Show a success message
+                        alert('Mua thành công');
+                    }
+                </script>
+            </section>
+            <script src="../scriptBrand.js"></script>
+            <script>
+                const cartbtn = document.querySelector(".bx-x")
+    const cartshow = document.querySelector(".bxs-shopping-bags")
+    cartshow.addEventListener("click",function(){
+        console.log(cartshow)
+       document.querySelector(".cart").style.right = "0"
+    })
+    cartbtn.addEventListener("click",function(){
+        console.log(cartshow)
+       document.querySelector(".cart").style.right = "-100%"
+    })
+            </script>
         <div id="footer">
             <div class="footer-box">
                 <img src="../../IMAGES/logo.png" alt="COCONUT-cosmetics " width="100%">

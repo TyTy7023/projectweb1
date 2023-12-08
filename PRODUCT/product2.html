@@ -7,6 +7,13 @@
         <link rel="stylesheet" href="../CSS/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Item2 of BIOY</title>
+        <script>
+            function error(){
+                 confirm("Bạn cần đăng nhập?");  
+                  
+                }
+                
+        </script>
     </head>
     <body>
         <div style="position: fixed; z-index: 10; width: 100%; ">
@@ -90,12 +97,12 @@
                             <div class="left">
                                 <i class='bx bx-cart-add' style="font-size:25px; color:#D0011B;"></i>
                             </div>
-                            <div class="right">
+                            <div class="right" onclick="error()">
                                 <p  style=" color:#D0011B">Thêm Vào Giỏ Hàng</p>
                             </div>
                            
                     </div></a>
-                    <div class="buy-now">
+                    <div class="buy-now" onclick="error()">
                         <a href=""  style="text-decoration: none;">
                             <span style="font-size: 20px; color:white">Mua Ngay</span>
                         </a>
