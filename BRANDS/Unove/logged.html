@@ -18,11 +18,14 @@
                 </div>
                 <!--insert search box-->
                 <div class="heading-box-C">
-                    <form id="search-box"> 
-                        <input type="text" placeholder="  Search..." id="search-text"> 
-                        <button type="submit" id="search-icon">
+                    <form class="filter"> 
+                     
+                        <input type="text" placeholder="  Tìm Kiếm..." id="search-text"> 
+                     <div class="item submit">
+                        <button onclick="searchProducts()" type="submit" id="search-icon">
                             <i class='bx bx-search'></i>
                         </button> 
+                    </div>
                     </form>
                 </div>
                 <!--insert item-->
@@ -149,9 +152,10 @@
                       <label for="maxPrice"><h2>Giá tối đa:</h2></label>
                       <input type="number" id="maxPrice" placeholder="giá tối đa" min="1" max="2000000">
                     </li>
-                    <button class="find"><a href="foundResult.html">Tìm kiếm</a></button>
+                    <a href="foundResult1.html"><button class="find">Tìm kiếm</button></a>
+                    <a href="foundResult1.html"><button class="find">Quay về trang chủ</button></a>
                   </ul>
-    
+                  
                 <div id="body">
                     <div id="body-title">
                         <h1>UNOVE</h1>
