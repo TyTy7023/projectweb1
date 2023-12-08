@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/styleadmin.css">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Order history</title>
+        <style>
+        header {
+            background-color: #f1f1f1;
+            margin-top: 1%;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        body {
+            
+            box-sizing: border-box;
+        }
+        .product-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-height: 1200px;
+    max-width: 1150px;
+    overflow-y: auto;
+    text-align: center;
+    margin: 0 auto;
+     /* Thêm viền màu đen */
+     /* Bo tròn góc viền */
+    padding: 50px ; 
+
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 15px;
+}
+.item img {
+    max-width: 17%;
+    max-height: 300px;
+    border-radius: 5px;
+    padding:10px ;
+    margin-right: auto;
+        }
+.product-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .product-info h2 {
+            font-size: 16px;
+            margin: 0;
+            white-space: nowrap; /* Chống chữ xuống dòng */
+            text-align: center; /* Căn giữa theo chiều ngang */
+        }
+        .product-quantity {
+            font-size: 14px;
+            color: #888;
+            text-align: right; /* Căn phải */
+        }
+.product-info img {
+    
+    max-width: 17%;
+    max-height: 300px;
+    border-radius: 5px;
+    
+    margin-right: auto;
+}
+
+.product-details {
+    max-width: 100%; /* Giới hạn chiều rộng tối đa */
+}
+
+.button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+        </style>
+</head>
+<body>
+    <div id="heading">
+        <!--insert logo-->
+        <div class="heading-box-L" align="center">
+            <img src="../IMAGES/logo.png" alt="COCONUT-cosmetics " width="60%">
+        </div>
+        <!--insert search box-->
+        <div class="heading-box-C">
+            <form class="filter"> 
+            <h1>CHÀO MỪNG ĐẾN VỚI TRANG ADMIN MR.THANH</h1>
+            </form>
+        </div>
+        <!--insert item-->
+        <div class="heading-box-R" align="center" id="item">
+           
+        
+        <div class="item-box" align="center">
+            <a href="INDEX.html">
+                <i class='bx bxs-user-circle' style="font-size: 50px;"></i>
+                <p style="font-size: medium;">đăng xuất</p>
+                <!-- Menu structure -->
+                <div class="menu">
+                    <ul>
+                        <li>Lịch sử đơn hàng</li>
+                        <a href="AccountInfo.html"><li>Thông tin tài khoản</li></a>
+                    </ul>
+                </div>
+            </a>
+        </div>
+        
+            <script>
+var isLoggedIn = false;
+
+function toggleLogin() {
+if (isLoggedIn) {
+    // Thực hiện các bước đăng xuất ở đây (nếu cần)
+    alert('Bạn đã đăng xuất.');
+
+    // Thay đổi trạng thái và nội dung khi đăng xuất
+    document.getElementById('loginButton').innerHTML = 
+        '<a href="#" onclick="toggleLogin()">' +
+            '<i class="bx bxs-user-circle"></i>' +
+            '<p style="font-size: small;">Login</p>' +
+        '</a>';
+    
+    isLoggedIn = false;
+} else {
+    // Thực hiện các bước đăng nhập ở đây (nếu cần)
+    alert('Bạn đã đăng nhập.');
+
+    // Thay đổi trạng thái và nội dung khi đăng nhập
+    document.getElementById('loginButton').innerHTML = 
+        '<a href="#" onclick="toggleLogin()">' +
+            '<i class="bx bxs-user-circle"></i>' +
+            '<p style="font-size: small;">Logout</p>' +
+        '</a>';
+    
+    isLoggedIn = true;
+}
+}
+</script>
+           
+        </div>
+    </div>
+    <header>
+        <h1>Chi tiết mua hàng</h1>
+    </header>
+    <section>
+        <div id="body-1" style="padding-top:30px ;">
+            <div class="title-select-admin">
+                <h1 style="font-size: 30px;">ĐƠN HÀNG ĐÃ ĐẶT</h1>
+            </div>
+            <a href="admin/qldh.html"><button style="width: 20%; height: 50px; font-size: 15px; margin-bottom: 0; margin-left: 10%; font-size: 20px;">Quay lại</button></a> 
+            <div class="select-admin-box">
+                <div class="title-box">
+                    <div class="title-box-1">
+                        <p style="font-size: larger;"><b>Hình Ảnh</b></p>
+                    </div>
+                    <div class="title-box-1">
+                        <p style="font-size: larger;"><b>Thương Hiệu</b></p>
+                    </div>
+                    <div class="title-box-2">
+                        <p style="font-size: larger;"><b>Chi Tiết</b></p>
+                    </div>
+                    <div class="title-box-3">
+                        <p style="font-size: larger;"><b>Số lượng</b>
+                    </div>
+                    <div class="title-box-4">
+                        <p style="font-size: larger;"><b>Giá</b></p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box-1">
+                      <img src="../IMAGES/hair5.jpg">
+                    </div>
+                    <div class="info-box-1"> 
+                        <p>Dove</p>
+                    </div>
+                    <div class="info-box-2">
+                        <b><p>Tên sản phẩm:</p></b>
+                        <p>Dầu Gội Dove Nhật Bơ & Dầu Argan Giúp Phục Hồi Tóc Hư Tổn 500G</p>
+                        <b><p>Công dụng: Dưỡng tóc</p></b>
+                    </div>
+                    <div class="info-box-3">
+                        <button type="button" style="width: 60%;height: 30px; margin: 105px 34px;">1</button>
+                    </div>
+                    <div class="info-box-4">
+                        <a href="updateProduct.html"><button type="button"  style="width: 60%;height: 30px; margin: 105px 34px;">19.99$</button></a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box-1">
+                      <img src="../IMAGES/body1.jpg">
+                    </div>
+                    <div class="info-box-1"> 
+                        <p>Dove</p>
+                    </div>
+                    <div class="info-box-2">
+                        <b><p>Tên sản phẩm:</p></b>
+                        <p>Tẩy Da Chết Toàn Thân Dove Exfoliating Body Polish</p>
+                        <b><p>Công dụng: Làm sạch da</p></b>
+                    </div>
+                    <div class="info-box-3">
+                        <button type="button" style="width: 60%;height: 30px; margin: 105px 34px;">1</button>
+                    </div>
+                    <div class="info-box-4">
+                        <a href="updateProduct.html"><button type="button"  style="width: 60%;height: 30px; margin: 105px 34px;">19.99$</button></a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box-1">
+                      <img src="../IMAGES/body5.jpg">
+                    </div>
+                    <div class="info-box-1"> 
+                        <p>Dove</p>
+                    </div>
+                    <div class="info-box-2">
+                        <b><p>Tên sản phẩm:</p></b>
+                        <p>Sữa tắm dưỡng thể Dove Da mịn thơm mát 500g</p>
+                        <b><p>Công dụng: Làm sạch da</p></b>
+                    </div>
+                    <div class="info-box-3">
+                        <button type="button" style="width: 60%;height: 30px; margin: 105px 34px;">1</button>
+                    </div>
+                    <div class="info-box-4">
+                        <a href="updateProduct.html"><button type="button"  style="width: 60%;height: 30px; margin: 105px 34px;">19.99$</button></a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box-2" align="center" style="background-color: #f1f1f1;">
+                        <p><b>TỔNG GIÁ TRỊ</b></p>
+                    </div>
+                    <div style="width: 80%; margin-top: 2%; font-size: 25px;" align="center">
+                        <p><b>59.97$</b></p>
+                    </div>
+                    
+                </div>
+                
+           
+        </div>
+            
+    </section>
+    <div id="footer" style="margin-top: 50%;">
+        <div class="footer-box">
+            <img src="../IMAGES/logo.png" alt="COCONUT-cosmetics " width="100%">
+        </div>
+        <div class="footer-box" style="width: 51%;">
+            <h3 style="margin-left: 12.7%; margin-bottom: 5px;">COCONUT STORES</h3>
+            <ul class="information">
+                <li><h5>HÀ NỘI CAPITAL</h5>
+                    <ul>
+                        <li>16/03 Lê Hồng Phong street, Điện Biên Phủ ward, Ba Đình district , Hà Nội capital</li>
+                        <li>10 Lý Quốc Sư street, hàng Trống ward, Hoàn Kiếm district, Hà Nội</li>
+                    </ul>
+                </li>
+                <li><h5>HỒ CHÍ MINH CITY</h5>
+                    <ul>
+                        <li>835/12 Trần Hưng Đạo street, ward 5, quận 5, Hồ Chí Minh city</li>
+                        <li>766 Võ Văn Kiệt street, ward 1, district 5, Hồ Chí Minh city</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-box" style="margin-top: 17px;" >
+            <ul style="list-style: none;">
+                <li><div class="info-contact"><i class='bx bxl-instagram' ></i><p>coconut_Cosmetic</p></div></li>
+                <li><div class="info-contact"><i class='bx bxl-facebook-circle' ></i><p>CoconutCosmetic</p></div></li>
+                <li><div class="info-contact"><i class='bx bxs-phone-call' ></i><p>1900.7007</p></div></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
